@@ -1,0 +1,281 @@
+Park,PlotID,Date,Observers,GroundCover,VegetationLevels,PastLandUse,Coordinates,Temperature,DensiometerN,DensiometerS,DensiometerE,DensiometerW,Comments,Park size,Established,Park age,Conservation area,Complexity
+Angrignon,AGR1-HIGH01,08/09/2022,"EP, LG, IR",Grass,overstory,Agricultural,"45°26.689'N, 073°35.629'W","16°C, Drizzle",84,89,93,91,,,,,,
+Angrignon,AGR1-HIGH03,08/09/2022,"EP, LG, IR","gravel path, grass, leaf litter, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°26.544'N, 073°36.004'W","16°C, Overcast ",94,83,89,92,,,,,,
+Angrignon,AGR1-HIGH04,08/09/2022,"EP, LG, IR","Herbaceous vegetation, leaf litter, bare soil","shrub, overstory, understory",Agricultural,"45°26.653'N, 073°36.090'W","17°C, Overcast",92,94,82,41,,,,,,
+Angrignon,AGR1-LOW01,08/09/2022,"EP, LG, IR","Grass, gravel path","shrub, overstory, understory",Agricultural,"45°26.566'N, 073°35.858'W","16°C, Overcast",79,0,0,7,,,,,,
+Angrignon,AGR1-LOW02,08/09/2022,"EP, LG, IR","Grass, gravel path",overstory,Agricultural,"45°26.751'N, 073°35.901'W","17°C, Overcast",21,40,62,32,,,,,,
+Angrignon,AGR1-LOW04,08/09/2022,"EP, LG, IR","Grass, ditch, cement path","shrub, overstory, understory",Agricultural,"45°26.666'N, 073°36.230'W","17°C, Overcast",41,23,71,0,,,,,,
+Angrignon,AGR1-MED01,08/09/2022,"EP, LG, IR","Grass, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°26.690'N, 073°35.978'W","16°C, Overcast",1,87,43,61,,,,,,
+Angrignon,AGR1-MED02,08/09/2022,"EP, LG, IR","Cement path, road, grass, bare soil",overstory,Agricultural,"45°26.665'N, 073°36.399'W","16°C, Overcast",95,94,72,89,,,,,,
+Angrignon,AGR1-MED06,08/09/2022,"EP, LG, IR","Grass, dirt path, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°26.710'N, 073°35.902'W","16°C, Overcast",10,39,80,69,,,,,,
+Saint-Gabriel ,AGR10-HIGH01,06/20/2022,"EP,IR,LG","cement path, grass",overstory,Agricultural,"45°28.698'N, 073°33.956'W","20°C, sunny ",91,80,95,94,,,,,,
+Saint-Gabriel ,AGR10-HIGH02,06/20/2022,"EP,IR,LG",,overstory,Agricultural,"45°28.688'N, 073°33.951'W","20°C, sunny ",41,90,93,86,GPS point is at eastern border of plot to avoid overlap ,,,,,
+Saint-Gabriel ,AGR10-HIGH04,06/20/2022,"EP,IR,LG","grass, cement path ",overstory,Agricultural,"45°28.656'N, 073°34.003'W","20°C, sunny ",95,95,90,96,,,,,,
+Saint-Gabriel ,AGR10-MED01,06/20/2022,"EP,IR,LG",,overstory,Agricultural,"45°28.682'N, 073°33.929'W","20°C, sunny ",91,92,93,91,,,,,,
+Saint-Gabriel ,AGR10-MED02,06/20/2022,"EP,IR,LG","grass, cement path ",overstory,Agricultural,"45°28.659'N, 073°33.985'W","20°C, sunny ",82,82,92,75,West transect 18m to avoid overap ,,,,,
+Saint-Gabriel ,AGR10-MED03,06/20/2022,"EP,IR,LG","grass, cement path",overstory,Agricultural,"45°28.655'N, 073°34.032'W","20°C, sunny ",87,78,79,79,,,,,,
+Pointe-aux-Prairies,AGR11-HIGH04,07/13/2022,"MP, LG, AT, GG, EP","dirt path, low vegetation, shrubs","shrub, overstory",Agricultural,"45°40.531'N, 073°29.582'W","25°C, Sunny",91,95,92,96,no mini plot,,,,,
+Pointe-aux-Prairies,AGR11-HIGH06,07/13/2022,"LG, AT, GG, EP, MP","low vegetation, shrubs","shrub, overstory, understory",Agricultural,"45°40.558'N, 073°29.577'W","27°C, Partly Cloudy",95,92,92,84,,,,,,
+Pointe-aux-Prairies,AGR11-HIGH07,07/19/2022,"EP, LG, IR","leaf litter, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°40.513'N, 073°29.516'W",,92,93,93,93,,,,,,
+Pointe-aux-Prairies,AGR11-LOW02,07/07/2022,"AT, EP, LG, MP, IR",herbaceous vegetation,"overstory, understory",Agricultural,"45°41.650'N, 073°30.816'W","20°C, Sunny",20,0,91,80,,,,,,
+Pointe-aux-Prairies,AGR11-LOW03,07/07/2022,"EP, AT, LG, MP, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,,"22°C, Sunny",15,14,13,23,,,,,,
+Pointe-aux-Prairies,AGR11-LOW04,07/07/2022,"EP, AT, LG, MP, IR",herbaceous vegetation,,Agricultural,"45°41.247'N, 073°30.874'W","24°C, Sunny",20,0,0,24,,,,,,
+Pointe-aux-Prairies,AGR11-MED01,07/07/2022,"EP, LG, AT, MP, IR","gravel path, grass, herbaceous vegetation","overstory, understory",Agricultural,"45°41.778'N, 073°30.862'W","20°C, Sunny",13,21,0,96,,,,,,
+Pointe-aux-Prairies,AGR11-MED02,07/07/2022,"AT, EP, LG, MP, IR","herbaceous vegetation, leaf litter, bare soil","shrub, overstory, understory",Agricultural,"45°41.561'N, 073°30.938'W","22°C, Sunny",96,0,19,73,,,,,,
+Pointe-aux-Prairies,AGR11-MED04,07/07/2022,"AT, EP, LG, MP, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°41.713'N, 073°30.981'W","20°C, Sunny",8,3,12,78,,,,,,
+Cap-Saint-Jacques,AGR2-HIGH02,08/02/2022,"EP, LG","bare soil, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°27.927'N, 073°55.720'W","23°C, Sunny",89,95,92,94,,,,,,
+Cap-Saint-Jacques,AGR2-HIGH03,07/28/2022,"LG, AT, IR","mulch, leaf litter, herbaceous vegetation","overstory, understory",Agricultural,"45°27.685'N, 073°55.949'W","28°C, Sunny ",92,89,95,89,,,,,,
+Cap-Saint-Jacques,AGR2-HIGH05,08/02/2022,"EP, LG","bare soil, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°27.937'N, 073°55.537'W","23°C, Cloudy ",89,95,90,92,,,,,,
+Cap-Saint-Jacques,AGR2-LOW03,08/02/2022,"LG, GG, IR","Grass, dirt path",overstory,Agricultural,"45°20.196'N, 073°56.163'W","21°C, Sunny",14,4,89,0,,,,,,
+Cap-Saint-Jacques,AGR2-LOW04,07/28/2022,"LG, AT, IR","gravel path, herbaceous vegetation","shrub, understory",Agricultural,"45°27.864'N, 073°56.053'W","27°C, Sunny ",10,34,0,23,,,,,,
+Cap-Saint-Jacques,AGR2-LOW05,07/28/2022,"LG, AT, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°27.918'N, 073°56.160'W","28°C, Overcast ",2,0,71,0,,,,,,
+Cap-Saint-Jacques,AGR2-MED02,07/28/2022,"AT, LG, IR","herbaceous vegetation, bare soil","shrub, overstory, understory",Agricultural,"45°27.757'N, 073°55.345'W","23°C, Sunny ",91,10,61,60,,,,,,
+Cap-Saint-Jacques,AGR2-MED04,07/28/2022,"AT, LG, IR","herbaceous vegetation, bare soil","shrub, overstory, understory",Agricultural,"45°27.670'N, 073°55.406'W","23°C, Sunny ",0,91,50,41,,,,,,
+Cap-Saint-Jacques,AGR2-MED05,07/28/2022,"AT, LG, IR","dirt path, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°27.653'N, 073°55.809'W","25°C, Sunny ",36,47,55,92,,,,,,
+Île-Bizard,AGR3-HIGH01,07/22/2022,"LG, AT, IR","leaf litter, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°30.975'N, 073°52.88'W","25°C, Sunny ",9,95,95,96,,,,,,
+Île-Bizard,AGR3-HIGH02,07/22/2022,"LG, AT, IR","herbaceous vegetation, leaf litter","shrub, overstory, understory",Agricultural,"45°30.953'N, 073°52.945'W","25°C, Sunny ",0,68,90,88,,,,,,
+Île-Bizard,AGR3-HIGH04,07/21/2022,"EP, AT, LG, IR","bare soil, leaf litter, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°30.976'N, 073°52.745'W","28°C, Sunny ",96,91,96,96,,,,,,
+Île-Bizard,AGR3-LOW02,07/21/2022,"EP, AT, LG, GG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°30.994'N, 073°52.852'W","28°C, Sunny ",93,16,91,11,,,,,,
+Île-Bizard,AGR3-LOW03,07/21/2022,"LG, AT, EP, GG, IR","herbaceous vegetation,","shrub, overstory",Agricultural,"45°31.115'N, 073°52.947'W","28°C, Sunny ",4,7,0,7,,,,,,
+Île-Bizard,AGR3-LOW03,07/21/2022,"EP, LG, AT, GG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°31.095'N, 073°53.012'W","27°C, Sunny ",45,0,16,50,,,,,,
+Île-Bizard,AGR3-MED01,07/21/2022,"EP, LG, AT, GG, IR",herbaceous vegetation,"shrub, overstory",Agricultural,"45°31.105'N, 073°52.963'W","27°C, Sunny ",6,37,80,1,,,,,,
+Île-Bizard,AGR3-MED05,07/21/2022,"LG, AT, EP, GG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°31.037'N, 073°52.882'W","28°C, Sunny ",90,0,11,14,,,,,,
+Île-Bizard,AGR3-MED06,07/21/2022,"LG, AT, EP, GG, IR",herbaceous vegetation,"shrub, overstory",Agricultural,"45°31.000'N, 073°52.903'W","29°C, Sunny ",93,83,72,90,,,,,,
+L'Anse-à-l'Orme,AGR4-HIGH03,07/27/2022,"EP, LG, IR","leaf litter, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°27.559'N, 073°54.940'W","25°C, Sunny",94,91,88,81,,,,,,
+L'Anse-à-l'Orme,AGR4-HIGH05,07/26/2022,"EP, LG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°27.134'N, 073°55.602'W","23°C, Sunny ",89,92,92,88,,,,,,
+L'Anse-à-l'Orme,AGR4-HIGH06,07/26/2022,"EP, LG, IR","herbaceous vegetation, moss, bare soil","shrub, overstory, understory",Agricultural,"45°27.306'N, 073°55.987'W","20°C, Sunny ",95,94,92,93,,,,,,
+L'Anse-à-l'Orme,AGR4-LOW01,07/27/2022,"EP, LG, IR","gravel road, herbaceous vegetation","shrub, overstory, understory",Agricultural,"45°27.387'N, 073°55.030W","22°C, Sunny ",3,0,0,55,,,,,,
+L'Anse-à-l'Orme,AGR4-LOW02,07/26/2022,"EP, LG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°26.980'N, 073°55.275'W","24°C, Sunny ",3,9,5,0,,,,,,
+L'Anse-à-l'Orme,AGR4-LOW05,07/26/2022,"EP, LG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°26.990'N, 073°55.363'W","24°C, Sunny ",0,0,2,0,,,,,,
+L'Anse-à-l'Orme,AGR4-MED02,07/27/2022,"EP, LG, IR","herbaceous vegetation, bare soil","shrub, overstory, understory",Agricultural,"45°27.185'N, 073°54.739'W","25°C, Sunny ",8,2,0,0,,,,,,
+L'Anse-à-l'Orme,AGR4-MED05,07/26/2022,"EP, LG, IR","herbaceous vegetation, bare soil","shrub, overstory, understory",Agricultural,"45°27.115'N, 073°55.391'W","24°C, Sunny ",78,83,91,90,,,,,,
+L'Anse-à-l'Orme,AGR4-MED06,07/27/2022,"EP, LG, IR",herbaceous vegetation,"shrub, overstory, understory",Agricultural,"45°27.282'N, 073°54.830'W","22°C, Sunny ",79,80,75,23,,,,,,
+Lafontaine,AGR5-HIGH03,07/08/2022,"AT, LG, IR, MP","grass, bare soil, gravel path",overstory,Agricultural,,"22°C, Sunny",70,96,95,94,,,,,,
+Lafontaine,AGR5-HIGH05,07/08/2022,"LG, AT, MP, IR","bare soil, grass, cement",overstory,Agricultural,,"22°C, Sunny",96,89,89,96,,,,,,
+Lafontaine,AGR5-HIGH06,07/08/2022,"LG, AT, MP, IR","grass, gravel path",overstory,Agricultural,,"22°C, Sunny",78,95,92,89,google maps coordinates,,,,,
+Lafontaine,AGR5-LOW03,07/08/2022,"AT, LG, IR, MP","grass, gravel, cement",overstory,Agricultural,,"22°C, Sunny",8,74,23,2,,,,,,
+Lafontaine,AGR5-LOW04,07/08/2022,"LG, AT, IR, MP","grass, bare soil, cement",overstory,Agricultural,,"22°C, Sunny",96,0,24,80,,,,,,
+Lafontaine,AGR5-LOW06,07/08/2022,"LG, AT, MP, IR","grass, bare soil",overstory,Agricultural,,"22°C, Sunny",0,16,5,0,google maps coordinates,,,,,
+Lafontaine,AGR5-MED01,07/08/2022,"LG, AT, MP, IR","cement, grass",overstory,Agricultural,,"22°C, Sunny",6,84,92,21,,,,,,
+Lafontaine,AGR5-MED04,07/08/2022,"LG, AT, MP, IR","cement, grass",overstory,Agricultural,,"22°C, Sunny",63,96,91,84,,,,,,
+Lafontaine,AGR5-MED05,07/08/2022,"AT, LG, MP, IR","bare soil, cement, grass",overstory,Agricultural,,"22°C, Sunny",30,11,15,60,,,,,,
+Marguerite-Bourgeoys,AGR6-HIGH01,06/28/2022,"EP,IR,LG","grass, cement path",overstory,Agricultural,"45°28.495'N, 073°33.609'W",24°Sunny,87,93,74,92,,,,,,
+Marguerite-Bourgeoys,AGR6-HIGH02,06/28/2022,"EP, LG, IR","grass, gravel path",overstory,Agricultural,"45°28.530'N, 073°33.442'W","24°C, Sunny",86,94,96,42,,,,,,
+Marguerite-Bourgeoys,AGR6-HIGH03,06/28/2022,"EP,IR,LG","grass, gravel path",overstory,Agricultural,"45°28.526'N, 073°33.618'W",24°Sunny,86,78,93,90,,,,,,
+Marguerite-Bourgeoys,AGR6-LOW02,06/28/2022,"EP,IR,LG","grass, gravel path",overstory,Agricultural,"45°28.558'N,073°33.571'W",21°C sunny,33,37,4,54,,,,,,
+Marguerite-Bourgeoys,AGR6-LOW04,06/28/2022,"IR, EP, LG ",gravel path,overstory,Agricultural,"45°28.529'N, 073°33.481'W","24°C, Sunny",21,92,40,16,,,,,,
+Marguerite-Bourgeoys,AGR6-LOW06,06/28/2022,"EP, IR, LG",grass,overstory,Agricultural,"45°28.512'N, 073°33.504'W","24°C, Sunny",7,53,65,25,,,,,,
+Marguerite-Bourgeoys,AGR6-MED02,06/28/2022,"EP,IR,LG","grass, gravel path",overstory,Agricultural,"45°28.445'N, 073°33.492'W","24°C, Sunny ",79,19,15,86,,,,,,
+Marguerite-Bourgeoys,AGR6-MED03,06/28/2022,"EP,IR,LG","grass, gravel path",overstory,Agricultural,"45°28.511'N, 073°33.545'W",24°Sunny,91,72,93,96,,,,,,
+Marguerite-Bourgeoys,AGR6-MED05,06/28/2022,"IR, LG, EP",grass,overstory,Agricultural,"45°28.482'N, 073°33.495'W","23°C, Sunny",87,58,56,93,,,,,,
+Benny,AGR7-HIGH01,06/27/2022,"EP,IR,LG,MP","grass, cement",overstory,Agricultural,"45°27.989'N, 073°38.062'W","23°C, overcast",93,88,86,92,,,,,,
+Benny,AGR7-HIGH02,06/27/2022,"EP,IR,LG,MP","leaf litter, grass, cement",overstory,Agricultural,"45°27.978'N, 073°38.015'W","23°C, overcast",96,96,96,96,,,,,,
+Benny,AGR7-HIGH04,06/27/2022,"EP,IR,LG,MP","grass, cement path",overstory,Agricultural,"45°27.937'N, 073°37.957'W","24°C, overcast",96,95,70,96,,,,,,
+Benny,AGR7-LOW03,06/27/2022,"EP,IR,LG,MP","grass, cement",overstory,Agricultural,"45°28.023'N, 073°37.955'W","23°C, overcast",66,0,12,78,,,,,,
+Benny,AGR7-LOW04,06/27/2022,"EP,IR,LG,MP","grass, cement",overstory,Agricultural,"45°28.048'N, 073°38.003'W","24°C, overcast",3,0,30,57,,,,,,
+Benny,AGR7-LOW05,06/27/2022,"EP,IR,LG,MP","grass, gravel path",overstory,Agricultural,"45°27.985'N, 073°37.978'W","23°C, overcast",4,0,0,0,,,,,,
+Benny,AGR7-MED02,06/27/2022,"EP,IR,LG,MP","grass, cement path",overstory,Agricultural,"45°27.989'N, 073°37.896'W","24°C, overcast",50,24,25,70,,,,,,
+Benny,AGR7-MED03,06/27/2022,"EP,IR,LG,MP",grass,overstory,Agricultural,"45°27.959'N, 073°37.982'W","23°C, overcast",1,36,78,87,,,,,,
+Benny,AGR7-MED04,06/27/2022,"EP,IR,LG,MP","leaf litter, grass, concrete",overstory,Agricultural,"45°27.942'N, 073°37.920'W","23°C, overcast",96,95,76,96,,,,,,
+Centennial,AGR8-HIGH01,06/27/2022,"EP,LG,IR","cement, grass, bare dirt",overstory,Agricultural,,"24°C, sunny",92,78,95,93,,,,,,
+Centennial,AGR8-HIGH04,06/27/2022,"EP,LG,IR","leaf litter, grass","shrub, overstory, understory",Agricultural,,"24°C, sunny",96,96,96,96,,,,,,
+Centennial,AGR8-HIGH05,06/27/2022,"EP,LG,IR","grass, gravel path","overstory, understory",Agricultural,,"24°C, sunny",54,29,66,29,,,,,,
+Centennial,AGR8-LOW01,06/27/2022,"EP,LG,IR","grass, dirt path",overstory,Agricultural,,"24°C, sunny",11,76,34,33,,,,,,
+Centennial,AGR8-LOW03,06/27/2022,"EP,LG,IR",grass,overstory,Agricultural,,"24°C, sunny",69,18,10,15,,,,,,
+Centennial,AGR8-MED02,06/27/2022,"EP,LG,IR","cement, grass","overstory, understory",Agricultural,,"24°C, sunny",85,96,36,96,,,,,,
+Centennial,AGR8-MED04,06/27/2022,"EP,LG,IR",grass,"overstory, understory",Agricultural,,"24°C, sunny",96,41,37,92,,,,,,
+Centennial,AGR8-MED05,06/27/2022,"EP,LG,IR",grass,overstory,Agricultural,,"24°C, sunny",96,56,92,90,,,,,,
+Fritz,AGR9-HIGH03,06/21/2022,"EP,GG,IR,MP","mulch, grass",overstory,Agricultural,"45°24.547'N, 073°55.106'W","18°C, overcast",96,75,84,96,,,,,,
+Fritz,AGR9-HIGH04,06/21/2022,"EP,GG,IR,MP","mulch, grass",overstory,Agricultural,"45°24.572'N, 073°55.119'W","18°C, overcast",93,95,96,83,,,,,,
+Fritz,AGR9-HIGH05,06/21/2022,"EP,GG,IR,MP","grass, road, cement path",overstory,Agricultural,"45°24.488'N, 073°55.198'W","18°C, sunny ",20,94,93,45,,,,,,
+Fritz,AGR9-LOW03,06/21/2022,"EP,GG,IR,MP","grass, bare soil","shrub, overstory",Agricultural,"45°24.344'N, 073°55.277'W","18°C, raining",54,4,88,0,,,,,,
+Fritz,AGR9-LOW05,06/21/2022,"EP,GG,IR,MP","grass, bare soil","shrub, overstory",Agricultural,"45°24.528'N, 073°55.207'W","18°C, overcast",22,29,72,8,,,,,,
+Fritz,AGR9-LOW06,06/21/2022,"EP,GG,IR,MP",grass,overstory,Agricultural,"45°24.597'N, 073°55.129'W","18°C, overcast",5,33,1,0,,,,,,
+Fritz,AGR9-MED05,06/21/2022,"EP,GG,IR,MP","grass, road, paved path",overstory,Agricultural,"45°24.496'N, 073°55.131'W","18°C, overcast",42,17,92,79,,,,,,
+Fritz,AGR9-MED06,06/21/2022,"EP,GG,IR,MP","grass, road, cement path",overstory,Agricultural,"45°24.467'N, 073°55.209'W","18°C, sunny ",94,34,87,84,,,,,,
+Fritz,AGR9-MED07,06/21/2022,"EP,GG,IR,MP",grass,overstory,Agricultural,"45°24.556'N, 073°55.217'W","18°C, raining",90,8,24,4,,,,,,
+Angrignon,FOR1-HIGH01,08/09/2022,"EP, LG, IR","bare soil, leaf litter, herbaceous vegetation","shrub, overstory, understory",Forested ,"45°26.475'N, 073°36.222'W","16°C, Overcast ",94,94,92,91,,45,1927,95,N,3
+Angrignon,FOR1-HIGH03,08/09/2022,"EP, LG, IR","Bare soil, leaf litter, dirt path ","shrub, overstory, understory",Forested,"45°26.427'N, 073°36.637'W","16°C, Overcast ",90,91,90,93,,45,1927,95,N,3
+Angrignon,FOR1-HIGH04,08/09/2022,"EP, LG, IR","Herbaceous vegetation, bare soil, leaf litter ","shrub, overstory, understory",Forested,"45°26.348'N, 073°36.291'W","16°C, Overcast",93,95,91,92,,45,1927,95,N,3
+Angrignon,FOR1-LOW01,08/09/2022,"EP, LG, IR","Grass, gravel path, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°26.538'W, 073°36.363'W","16°C, Overcast ",34,10,32,70,,45,1927,95,N,3
+Angrignon,FOR1-LOW02,08/09/2022,"EP, LG, IR ","Grass, cement path, bare soil ",overstory,Forested ,"45°26.514'N, 073°36.627'W","16°C, Overcast",82,0,0,45,,45,1927,95,N,1
+Angrignon,FOR1-LOW05,08/09/2022,"EP, LG, IR","Grass, gravel path, mulch",overstory,Forested ,"45°26.487'N, 073°35.880'W","16°C, Overcast ",80,13,42,46,,45,1927,95,N,1
+Angrignon,FOR1-MED01,08/09/2022,"EP, LG, IR","Grass, herbaceous vegetation","shrub, overstory, understory",Forested ,"45°26.394'N, 073°36.082'W","16°C, Overcast ",81,62,59,74,,45,1927,95,N,3
+Angrignon,FOR1-MED02,08/09/2022,"EP, LG, IR","Grass, herbaceous vegetation, gravel path ","shrub, overstory, understory",Forested ,"45°26.390'N, 073°36.019'W","16°C, Overcast ",89,83,83,82,,45,1927,95,N,3
+Angrignon,FOR1-MED05,08/09/2022,"EP, LG, IR","Grass, cement path, bare soil ",overstory,Forested ,"45°26.451'N, 073°36.510'W","16°C, Overcast ",92,42,66,67,No tree sin mini plots,45,1927,95,N,1
+Pointe-aux-Prairies,FOR10-HIGH02,07/13/2022,"MP, LG, AT, GG, EP","Herbaceous vegetation, leaf litter","overstory, understory",Forested,"45°40.444'N, 073°30.366'W","22°C, Sunny ",90,91,95,93,,15.25,1992,30,Y,2
+Pointe-aux-Prairies,FOR10-HIGH04,07/13/2022,"MP, LG, AT, GG, EP","Leaf litter, herbaceous vegetation","overstory, understory",Forested ,"45°40.474'N, 073°30.369'W","23°C, Sunny ",94,95,96,90,,15.25,1992,30,Y,2
+Pointe-aux-Prairies,FOR10-HIGH05,07/13/2022,"MP, LG, AT, GG, EP","leaf litter, herbaceous vegetation ","overstory, understory",Forested ,,"26°C, Sunny ",88,93,93,96,,15.25,1992,30,Y,2
+Pointe-aux-Prairies,FOR10-MED01,07/13/2022,"EP, IR, LG","Leaf litter, herbaceous vegetation","shrub, overstory, understory",Forested,"45°40.343'N, 073°30.376'W","26°C, Sunny",89,77,83,84,,15.25,1992,30,Y,3
+Pointe-aux-Prairies,FOR10-MED03,07/13/2022,"MP, LG, AT, GG, EP","Leaf litter, herbaceous vegetation ","overstory, understory",Forested ,"45°40.541'N, 073°30.335'W","26°C, partly couldy ",79,84,90,90,"Plot smaller, 10 m east and 15m west. Due to fence and phragmites ",15.25,1992,30,Y,2
+Pointe-aux-Prairies,FOR10-MED05,07/18/2022,"LG, EP, IR","dirt path, herbaceous vegetation, leaf litter","shrub, overstory, understory",Forested ,,"22°C, Sunny ",91,89,94,91,,15.25,1992,30,Y,3
+Thomas-Chapais,FOR11-HIGH01,08/08/2022,"IR, EP, LG ","dirt path, leaf litter, bare soil ","shrub, overstory, understory",Forested ,"45°36.479'N, 073°32.269'W","15°C, Raining ",92,93,92,89,,16,1960,62,N,3
+Thomas-Chapais,FOR11-HIGH02,08/08/2022,"EP, IR, LG","Gravel path, leaf litter, bare soil ","shrub, overstory, understory",Forested,"45°36.426'N, 073°32.262","15°C, Overcast/raining",92,94,93,93,,16,1960,62,N,3
+Thomas-Chapais,FOR11-HIGH06,08/08/2022,"EP, IR, LG","Bare soil, dirt path, leaf litter","shrub, overstory, understory",Forested ,"45°36.516'N, 073°32.407'W","15°C, Raining ",89,91,93,93,,16,1960,62,N,3
+Thomas-Chapais,FOR11-LOW01,08/08/2022,"EP, IR, LG","Grass, gravel path",overstory,Forested ,"45°36.481'N, 073°32.064'W","16°C, Raining ",0,11,17,27,,16,1960,62,N,1
+Thomas-Chapais,FOR11-LOW04,08/08/2022,"IR, EP, LG ",Grass,overstory,Forested ,"45°36.498'N, 073°32.031'W","15°C, Raining ",26,6,45,0,,16,1960,62,N,1
+Thomas-Chapais,FOR11-LOW06 ,08/08/2022,"EP, IR, LG","Grass, gravel path ",overstory,Forested ,"45°36.516'N, 073°32.164°W","16°C, Raining ",4,73,7,9,,16,1960,62,N,1
+Thomas-Chapais,FOR11-MED03,08/08/2022,"EP, IR, LG","gravel path, grass, herbaceous vegetation, leaf litter","shrub, overstory, understory",Forested ,"45°36.531'N, 073°32.243'W","15°C, Raining ",91,61,70,75,,16,1960,62,N,3
+Thomas-Chapais,FOR11-MED04,08/08/2022,"EP, IR, LG","Grass, herbaceous vegetation, leaf litter","shrub, overstory, understory",Forested ,"45°36.571'N, 073°32.434'W","15°C, Raining ",13,75,11,84,,16,1960,62,N,3
+Thomas-Chapais,FOR11-MED05,08/08/2022,"EP, IR, LG","Grass, gravel path, herbaceous vegetation ",overstory,Forested ,"45°36.466'N, 073°32.025'W","16°C, raining ",56,47,8,56,,16,1960,62,N,1
+Bois-de-Liesse,FOR2-HIGH01,08/03/2022,"EP, IR, LG","Herbaceous vegetation, bare soil, leaf litter ",,Forested ,"45°29.929'N, 073°46.298'W","20°C, Sunny ",91,95,90,93,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-HIGH03,08/03/2022,"EP, IR, LG","Leaf litter, bare soil, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°29.737'N, 073°46.444'W","19°C, Sunny ",91,94,94,92,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-HIGH06,08/03/2022,"EP, IR, LG","Herbaceous vegetation, bare soil, leaf litter ","shrub, overstory, understory",Forested ,"45°29.815'N, 073°46.367'W","19°C, Sunny ",93,94,93,92,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-LOW01,08/03/2022,"EP, IR, LG","herbaceous vegetation, leaf litter, dirt path ","shrub, overstory, understory",Forested ,"45°20.227'N, 073°45.698'W","23°C, Sunny ",90,94,70,70,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-LOW02,08/03/2022,"EP, IR, LG","gravel path, herbaceous vegetation","shrub, overstory, understory",Forested ,"45°30.147'N, 073°45.917'W","22°C, Sunny ",56,63,50,62,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-LOW04,08/03/2022,"EP,IR,LG","gravel path, herbaceous vegetation, leaf litter ","shrub, overstory, understory",Forested ,"45°30.128'N, 073°45.765'W","22°C, Sunny ",0,8,0,63,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-MED01,08/03/2022,"EP,IR,LG","leaf litter, herbaceous vegetation, gravel path","shrub, overstory, understory",Forested ,"45°29.983'N, 073°45.943'W","23°C, Sunny ",17,93,83,0,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-MED03,08/03/2022,"EP, IR, LG","gravel path, grass, herbaceous vegetation, leaf litter","shrub, overstory, understory",Forested ,"45°30.054'N, 073°46.199'W","22°C, Sunny ",24,28,23,19,,200,1987,35,Y,3
+Bois-de-Liesse,FOR2-MED04,08/03/2022,"EP, IR, LG","gravel path, herbaceous vegetation, leaf litter ","shrub, overstory, understory",Forested,"45°29.991'N, 073°46.003'W","22°C, Sunny",94,76,96,88,,200,1987,35,Y,3
+Bois-de-Saraguay,FOR3-HIGH01,08/04/2022,"IR,EP,LG","leaf litter, bare soil, berbaceous vegetation","shrub, overstory, understory",Forested ,"45°31.018'N, 073°44.436'W","23°C, Overcast ",93,94,94,94,,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-HIGH03,08/04/2022,"IR,EP,LG","Leaf litter, herbaceous vegetation, gravel path, bare soil","shrub, overstory, understory",Forested ,"45°30.950'N, 073°44.046'W","23°C, Overcast/raining",84,93,94,92,,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-HIGH06,08/04/2022,"IR,EP,LG","Leaf litter, herbaceous vegetation","shrub, overstory, understory",Forested ,"45°30.993'N, 073°44.016'W","23°C, Overcast ",94,90,93,91,,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-LOW03,08/04/2022,"IR,EP,LG","dirt path, leaf litter, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°30.955'N, 073°43.921'W","23°C, raining/overcast ",13,44,19,6,Moved sensor at 13h42,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-LOW04,08/04/2022,"IR,EP,LG",Herbaceous vegetation,overstory,Forested ,"45°30.872'N, 073°44.211'W","23°C, Overcast",61,20,55,58,,86,1987,35,Y,1
+Bois-de-Saraguay,FOR3-LOW05,08/04/2022,"IR,EP,LG","Herbaceous vegetation, gravel path ","shrub, overstory, understory",Forested ,"45°30.919'N, 073°44.124'W","22°C, Overcast ",8,18,58,72,,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-MED03,08/04/2022,"IR,EP,LG","leaf litter, bare soil, berbaceous vegetation","shrub, overstory, understory",Forested ,"45°30.930'N, 073°44.073'W","22°C, Overcast ",77,84,81,87,,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-MED04,08/04/2022,"IR,EP,LG","Leaf litter, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°31.068'N, 073°44.558'W","22°C, Overcast",81,88,91,81,,86,1987,35,Y,3
+Bois-de-Saraguay,FOR3-MED05,08/04/2022,"IR,EP,LG","Gravel path, herbaceous vegetation","shrub, overstory, understory",Forested ,"45°30.910'N, 073°44.234'W","22°C, Overcast ",78,76,81,61,,86,1987,35,Y,3
+Boisé-de-Saint-Sulpice,FOR4-HIGH02,08/18/2022,"EP,LG","low vegetation, dirt path","shrub, overstory, understory",Forested ,"45°33.246'N, 073°38.388'W","21°C, Cloudy ",96,89,93,95,,8.7,1990,32,N,3
+Boisé-de-Saint-Sulpice,FOR4-HIGH03,06/08/2022,"IR, MP, EP, KHT",Leaf litter,"shrub, overstory, understory",Forested ,"45°33.329'N, 073°38.330'W",18°C,91,81,95,95,,8.7,1990,32,N,3
+Boisé-de-Saint-Sulpice,FOR4-HIGH04,08/18/2022,"EP,LG","vegetated, dirt path, leaf litter ","shrub, overstory, understory",Forested,"45°33.246'N, 073°38.437'W","22°C, Cloudy ",91,92,90,87,,8.7,1990,32,N,3
+Boisé-de-Saint-Sulpice,FOR4-LOW01,08/18/2022,"EP,LG",Grass,"shrub, overstory",Forested ,"45°33.178'N, 073°38.360'W","22°C, Cloudy ",12,12,0,26,,8.7,1990,32,N,2
+Boisé-de-Saint-Sulpice,FOR4-LOW02,08/18/2022,"EP,LG","Grass, vegetated","shrub, overstory",Forested,"45°33.182'N, 073°38.400'W","22°C, Cloudy ",30,0,2,17,,8.7,1990,32,N,2
+Boisé-de-Saint-Sulpice,FOR4-LOW04,08/18/2022,"EP,LG","Tall grass, shrubs, leaf litter ","shrub, overstory, understory",Forested ,"45°33.196'N, 073°38.343'W","22°C, Rainy",20,2,9,12,,8.7,1990,32,N,3
+Boisé-de-Saint-Sulpice,FOR4-MED01,08/18/2022,"EP,LG","vegetated, dirt path, bare soil ","shrub, overstory, understory",Forested ,"45°33.200'N, 073°38.445'W","21°C, Cloudy ",28,2,24,18,,8.7,1990,32,N,3
+Boisé-de-Saint-Sulpice,FOR4-MED02,08/18/2022,"EP,LG","Soil, leaf litter, detritus ","shrub, overstory, understory",Forested ,"45°33.337'N, 073°38.370'W","21°C, Cloudy ",82,77,79,84,,8.7,1990,32,N,3
+Boisé-de-Saint-Sulpice,FOR4-MED05,08/18/2022,"EP,LG","grass, vegetated, dirt path ","shrub, overstory, understory",Forested ,"45°33.231'N, 073°38.326'W","21°C, Cloudy ",19,82,31,10,,8.7,1990,32,N,3
+Cap-Saint-Jacques,FOR5-HIGH02,08/02/2022,"EP,LG,IR","Leaf Litter, herbaceous vegetation ","shrub, overstory, understory",Forested,"45°27.929'N, 073°55.817'W","26°C, Overcast ",92,96,90,93,,7.6,1985,37,Y,3
+Cap-Saint-Jacques,FOR5-HIGH03,07/29/2022,"GG, LG, IR","leaf litter, bare soil, berbaceous vegetation","shrub, overstory, understory",Forested ,"45°28.092'N, 073°55.571'W","24°C, Sunny ",93,92,85,95,,7.6,1985,37,Y,3
+Cap-Saint-Jacques,FOR5-HIGH05,07/29/2022,"GG, LG, IR","Leaf litter, dirt path, herbaceous vegetation ","overstory, understory",Forested,"45°28.077 N, 073°55.882'W","21°C, Sunny ",96,90,92,94,,7.6,1985,37,Y,2
+Cap-Saint-Jacques,FOR5-LOW01,08/02/2022,"EP,LG,IR",Herbaceous vegetation ,"shrub, overstory, understory",Forested ,"45°28.042'N, 073°55.572'W","27°C, Sunny ",0,0,12,0,,7.6,1985,37,Y,3
+Cap-Saint-Jacques,FOR5-LOW02,07/29/2022,"GG, LG, IR",herbaceous vegetation ,"shrub, overstory, understory",Forested,"45°28.136'N, 073°55.877'W","23°C, Sunny ",26,36,8,14,,7.6,1985,37,Y,3
+Cap-Saint-Jacques,FOR5-MED01,08/02/2022,"EP,LG,IR",Herbaceous vegetation ,"shrub, overstory, understory",Forested ,"45°28.032'N, 073°55.591'W","27°C, Overcast ",85,30,59,93,,7.6,1985,37,Y,3
+Cap-Saint-Jacques,FOR5-MED02,07/29/2022,"GG, LG, IR","Leaf litter, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°28.144'N, 073°55.796'W","21°C, Sunny ",83,93,92,80,,7.6,1985,37,Y,3
+Cap-Saint-Jacques,FOR5-MED04,08/02/2022,"EP,LG,IR","herbaceous vegetation, bare soil ","shrub, overstory, understory",Forested,"45°28.020'N, 073°55.625","27°C, Overcast ",89,89,87,89,,7.6,1985,37,Y,3
+Coulée-Grou,FOR6-HIGH01,06/22/2022,"EP,MP,IR","herbaceous , soil ","shrub, overstory, understory",Forested,"45°41.934'N, 073°30.284'W","19°C, overcast ",89,75,93,94,,25,1988,34,N,3
+Coulée-Grou,FOR6-HIGH02,07/04/2022,"EP,IR,LG,MP,AT",herbaceous vegetation ,overstory,Forested ,"45°41.400'N, 073°29.946'W","24°C, sunny ",96,94,94,94,,25,1988,34,N,1
+Coulée-Grou,FOR6-HIGH03,07/04/2022,"EP,IR,LG,MP,AT","vegetation, bare soil ","shrub, overstory, understory",Forested,"45°41.655'N, 073°30.115'W","21°C, sunny ",84,95,93,94,,25,1988,34,N,3
+Coulée-Grou,FOR6-LOW02,07/04/2022,"EP,IR,LG,MP,AT",herbaceous vegetation ,overstory,Forested,"45°41.457'N, 073°30.014'W","24°C, sunny ",30,20,96,2,,25,1988,34,N,1
+Coulée-Grou,FOR6-LOW03,07/04/2022,"EP,IR,LG,MP,AT","grass,gravel path, vegetation ","overstory, understory",Forested,"45°41.063'N, 073°30.022'W","25°C, sunny ",14,95,9,5,,25,1988,34,N,2
+Coulée-Grou,FOR6-LOW05,07/04/2022,"EP,IR,LG,MP,AT","vegetation, herbaceous ",overstory,Forested,"45°41.573'N, 073°30.102'W","22°C, sunny ",39,7,42,37,,25,1988,34,N,1
+Coulée-Grou,FOR6-MED01,07/04/2022,"EP,IR,LG,MP,AT","vegetated, medow, phragmites","shrub, overstory",Forested ,"45°41.684'N, 073°30.157'W","21°C, sunny ",76,95,94,80,,25,1988,34,N,2
+Coulée-Grou,FOR6-MED03,06/22/2022,"EP,MP,IR","herbaceou, bare soil","shrub, overstory, understory",Forested ,"45°41.959'N, 073°30.363'W","19°C, overcast ",42,89,44,96,,25,1988,34,N,3
+Coulée-Grou,FOR6-MED05,06/22/2022,"EP,MP,IR","cement path, grass, herbaceous ","shrub, overstory, understory",Forested ,"45°41.892'N, 073°30.357'W","19°C, overcast ",62,87,95,31,,25,1988,34,N,3
+Île-Bizard,FOR7-HIGH01,07/20/2022,"EP, IR","Leaf litter, bare soil, gravel path ","overstory, understory",Forested ,"45°30.650N, 073°52.312'W","25°C, Sunny ",95,90,92,95,,45,1991,31,Y,2
+Île-Bizard,FOR7-HIGH04,07/20/2022,"EP, IR","Herbaceous vegetation, Stone, Leaf litter","shrub, overstory, understory",Forested ,"45°30.663'N, 073°52.261'W","26°C, Overcast ",92,95,93,92,,45,1991,31,Y,3
+Île-Bizard,FOR7-HIGH05,07/20/2022,"EP, IR",Herbaceous vegetation ,"shrub, overstory, understory",Forested ,"45°30.470'N, 073°52.550'W","25°C, Sunny ",93,95,95,94,,45,1991,31,Y,3
+Île-Bizard,FOR7-LOW03,07/20/2022,"EP, IR",Herbaceous veg,"shrub, overstory, understory",Forested ,"45°30.932'N, 073°53.413'W","32°C, Sunny ",2,14,36,19,,45,1991,31,Y,3
+Île-Bizard,FOR7-LOW06,07/20/2022,"EP, IR",Herbaceous vegetation ,"shrub, overstory, understory",Forested ,"45°30.835'N, 073°53.572'W","27°C, Sunny ",2,29,4,0,,45,1991,31,Y,3
+Île-Bizard,FOR7-LOW07,07/20/2022,"EP, IR",Herbaceous vegetation ,"shrub, overstory, understory",Forested ,"45°30.861'N, 073°55.460'W","30°C, Sunny ",0,17,3,0,,45,1991,31,Y,3
+Île-Bizard,FOR7-MED06,07/22/2022,"LG, AT, IR",herbaceous vegetation,"shrub, overstory, understory",Forested,"45°30.848'N, 073°53.506'W","27°C, Sunny ",,,,,,45,1991,31,Y,3
+Jean-Drapeau,FOR8-HIGH02,08/05/2022,"EP, LG, IR",Grass,overstory,Forested,"45°30.852'N, 073°32.011'W","22°C, Sunny ",84,92,69,91,,18.5,1908,114,N,1
+Jean-Drapeau,FOR8-HIGH04,08/05/2022,"EP, LG, IR","Bare soil, leaf litter, grass, cement path","shrub, overstory, understory",Forested ,"45°30.994'N, 073°31.934'W","22°C, Sunny",95,95,93,96,,18.5,1908,114,N,3
+Jean-Drapeau,FOR8-LOW02,08/05/2022,"EP, IR, LG","Grass, mulch ",overstory,Forested ,"45°31.013'N, 073°32.136'W","21°C, Sunny ",44,19,34,70,,18.5,1908,114,N,1
+Jean-Drapeau,FOR8-LOW03,08/05/2022,"EP, IR, LG","Grass, mulch ",overstory,Forested ,"45°31.110'W, 073°32.098'W","21°C, Sunny ",38,41,31,27,,18.5,1908,114,N,1
+Jean-Drapeau,FOR8-MED01,08/05/2022,"EP, IR, LG","Grass, gravel path, mulch ",overstory,Forested ,"45°31.111'N, 073°31.942'W","22°C, Sunny ",40,71,76,76,,18.5,1908,114,N,1
+Jean-Drapeau,FOR8-MED02,08/05/2022,"EP, LG, IR","Grass, bare soil, leaf litter","shrub, overstory, understory",Forested ,"45°30.856'N, 073°31.962'W","22°C, Sunny ",86,61,87,69,,18.5,1908,114,N,3
+Jean-Drapeau,FOR8-MED03,08/05/2022,"EP, LG, IR",Grass,overstory,Forested ,"45°30.822'N, 073°31.988'W","22°C, Sunny ",91,81,78,93,,18.5,1908,114,N,1
+Jean-Drapeau,FOR8-MED03,08/05/2022,"EP, IR, LG","Bare soil, cement path, leaf litter, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°31.027'N, 073°32.076'W","21°C, Sunny ",92,94,93,93,,18.5,1908,114,N,3
+L'Anse-à-l'Orme,FOR9-HIGH01,07/25/2022,"IR,EP,LG","Leaf litter, herbaceous vegation ","shrub, overstory, understory",Forested ,"45°26.697'N, 073°54.754'W","25°C, Sunny",94,93,93,95,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-HIGH02,07/25/2022,"IR,EP,LG","Leaf litter, dirt path, herbaceous vegetation ","shrub, overstory, understory",Forested ,"45°26.838'N, 073°54.476","26°C, Sunny ",94,92,96,94,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-HIGH03,07/25/2022,"IR,EP,LG",Leaf litter ,"shrub, overstory, understory",Forested ,"45°26.379'N, 073°54.507'W",25°C,96,94,96,93,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-LOW01,07/25/2022,"IR,EP,LG","Cement path, herbaceous vegetation","shrub, overstory, understory",Forested ,"45°26.432'N, 073°54.474'W","24°C, Sunny ",19,56,4,3,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-LOW02,07/25/2022,"EP, LG, IR",herbaceous vegetation,"shrub, overstory, understory",Forested,"45°26.970'N, 073°54.561'W","26°C, Sunny ",37,94,15,42,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-LOW04,07/25/2022,"IR,EP,LG","Cement path, herbaceous vegetation","shrub, overstory, understory",Forested,"45°26.474'N, 073°54.353'W","24°C, Sunny ",14,96,66,67,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-MED01,07/25/2022,"IR,EP,LG","Herbaceous vegetation, leaf litter","shrub, overstory, understory",Forested ,"45°26.350'N,073°54.238'W","26°C, Sunny",5,2,70,27,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-MED02,07/25/2022,"IR,EP,LG","Bare soil, woody detrius ","shrub, overstory, understory",Forested ,"45°26.502'N, 073°54.309'W","21°C, Sunny ",86,89,83,94,,26,1987,35,Y,3
+L'Anse-à-l'Orme,FOR9-MED03,07/25/2022,"IR,EP,LG","Cement path, herbaceous vegetation, Leaf litter ","shrub, overstory, understory",Forested ,"45°26.458'N, 073°54.385'W","24°C, Sunny ",18,94,92,75,,26,1987,35,Y,3
+Adrien-D-Archambault,IND1-HIGH01,07/06/2022,"EP, LG, AT, MP, IR","bare soil, leaf litter, dirt path, herbaceous vegetation","shrub, overstory, understory",Industrial,"45°27.434'N, 073°33.433'W","20°C, Sunny",59,92,96,95,,,,,,
+Adrien-D-Archambault,IND1-HIGH02,07/06/2022,"LG, EP, AT, MP, IR","herbaceous vegetation, gravel path, dirt path","shrub, overstory, understory",Industrial,"45°27.406'W, 073°33.505'W","23°C, Sunny",96,96,95,95,,,,,,
+Adrien-D-Archambault,IND1-HIGH03,07/06/2022,"LG, EP, AT, MP, IR","bare soil, leaf litter, herbaceous vegetation","shrub, overstory, understory",Industrial,"45°27.436'N, 073°33.464'W","2°C, Sunny ",92,96,96,94,,,,,,
+Adrien-D-Archambault,IND1-LOW01,07/06/2022,"EP, LG, AT, MP, IR","Grass, herbaceous vegetation, gravel path ",overstory,Industrial,"45°27.419'N, 073°33.419'W","20°C, Sunny",28,11,92,4,,,,,,
+Adrien-D-Archambault,IND1-LOW02,07/06/2022,"EP, LG, AT, MP, IR","gravel path, herbaceous vegetation, grass",overstory,Industrial,"45°27.417'N, 073°33.461'W","22°C, Sunny",28,0,73,29,cut off by community garden,,,,,
+Adrien-D-Archambault,IND1-LOW04,07/06/2022,"LG, EP, AT, MP, IR","gravel path, grass, herbaceous vegetation","shrub, overstory, understory",Industrial,"45°27.379'N, 073°33.578'W","24°C, Sunny",11,4,7,43,,,,,,
+Adrien-D-Archambault,IND1-MED01,07/06/2022,"LG, EP, AT, MP, IR","gravel path, herbaceous vegetation, bare soil","shrub, overstory",Industrial,"45°27.421'N, 073°33.493'W","23°C, Sunny",95,93,93,96,,,,,,
+Adrien-D-Archambault,IND1-MED02,07/06/2022,"EP, LG, AT, MP, IR","cement, herbaceous vegetation, leaf litter, bare soil","shrub, overstory, understory",Industrial,"45°27.304'N, 073°33.540'W","24°C, Sunny",95,63,96,96,,,,,,
+Adrien-D-Archambault,IND1-MED03,07/06/2022,"EP, LG, AT, IR, MP","herbaceous vegetation, phragmites, bare soil","shrub, overstory",Industrial,"45°27.330'W, 073°33.537'W","24°C, Sunny",94,12,8,94,,,,,,
+Père-Marquette,IND11-HIGH03,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial,"45°32.363'N, 073°35.422'W","20°C, sunny ",86,95,92,88,,,,,,
+Père-Marquette,IND11-HIGH04,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial,"45°32.343'N, 073°35.379'W°","20°C, sunny ",85,87,96,91,,,,,,
+Père-Marquette,IND11-HIGH05,06/20/2022,"EP,IR,MP","grass, concert path ",overstory,Industrial,"45°32.285'N, 073°35.718'W","20°C, sunny ",29,96,93,90,,,,,,
+Père-Marquette,IND11-LOW01,06/20/2022,"EP,IR,MP","cement path, grass, herbaceous ",overstory,Industrial,"45°32.286'N, 073°35.633'W","20°C, sunny ",0,95,0,27,,,,,,
+Père-Marquette,IND11-LOW03,06/20/2022,"EP,IR,MP",grass (baseball diamond),overstory,Industrial,,"20°C, sunny",0,1,0,17,,,,,,
+Père-Marquette,IND11-LOW04,06/20/2022,"EP,IR,MP","grass, dirt path",overstory,Industrial,"45°32.491'N, 073°35.704'W","18°C, sunny ",55,0,8,92,,,,,,
+Père-Marquette,IND11-MED04,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial,"45°32.377'N, 073°35.492'W","20°C, sunny ",90,94,24,85,,,,,,
+Père-Marquette,IND11-MED05,06/20/2022,"EP,IR,MP","grass, concert path",overstory,Industrial,"45°32.316'N, 073°35.753'W","19°C,sunny ",72,0,0,67,,,,,,
+Père-Marquette,IND11-MED06,06/20/2022,"EP,IR,MP","grass, cenment path ",overstory,Industrial,"45°32.349'N, 073°35.521'W","20°C, sunny ",95,95,87,89,,,,,,
+Pointe-aux-Prairies,IND12-HIGH01,07/18/2022,"EP, LG, IR","Leaf litter, bare soil, herbaceous vegetation ","overstory, understory",Industrial,,"25°C, Overcast",93,93,95,95,,,,,,
+Pointe-aux-Prairies,IND12-HIGH03,07/19/2022,"EP, LG, IR","bare soil, leaf litter, herbaceous vegetation","shrub, overstory, understory",Industrial,,"24°C, Sunny",92,86,93,94,,,,,,
+Pointe-aux-Prairies,IND12-HIGH05,07/22/2022,"EP, LG, IR","Leaf litter, bare soil, herbaceous vegetation ","shrub, overstory, understory",Industrial,,"25°C, Raining",95,92,95,95,,,,,,
+Pointe-aux-Prairies,IND12-LOW02,07/18/2022,"LG, EP, IR","Herbaceous vegetation, gravel path ","shrub, overstory, understory",Industrial ,,"24°C, Sunny",96,1,18,4,,,,,,
+Pointe-aux-Prairies,IND12-LOW04,07/18/2022,"LG, EP, IR",herbaceous vegetation,"shrub, overstory, understory",Industrial,,"25°C, Overcast",0,28,3,0,,,,,,
+Pointe-aux-Prairies,IND12-LOW05,07/18/2022,"LG, EP, IR",herbaceous vegetation,shrub,Industrial,,"25°C, Overcast",0,0,8,0,,,,,,
+Pointe-aux-Prairies,IND12-MED01,07/19/2022,"EP, LG, IR","herbaceous vegetation, gravel path, leaf litter, bare soil","shrub, overstory, understory",Industrial,,"22°C, Sunny",94,12,0,94,,,,,,
+Pointe-aux-Prairies,IND12-MED03,07/19/2022,"LG, EP, IR","herbaceous vegetation, leaf litter, bare soil","shrub, overstory, understory",Industrial,,"25°C, Sunny",89,93,95,81,,,,,,
+Pointe-aux-Prairies,IND12-MED05,07/18/2022,"EP, LG, IR","bare soil, herbaceous vegetation","shrub, overstory, understory",Industrial,,"25°C, Overcast",92,95,95,93,,,,,,
+Promenade-Bellerive,IND13-HIGH06,08/16/2022,"EP, AT, LG","Grass, bare soil","overstory, understory",Industrial,"45°36.296'N, 073°30.574'W","26°C, Sunny ",87,89,95,90,,,,,,
+Promenade-Bellerive,IND13-LOW02,08/16/2022,"EP, AT, LG","Grass, gravel path","shrub, overstory",Industrial,"45°35.637'N, 073°30.478'W","26°C, Sunny ",26,0,0,0,,,,,,
+Promenade-Bellerive,IND13-LOW03,08/16/2022,"EP, AT, LG","Grass, gravel path",overstory,Industrial,"45°36.014'N, 073°30.596'W","26°C, Sunny ",15,0,2,0,,,,,,
+Promenade-Bellerive,IND13-LOW04,08/16/2022,"EP, AT, LG",Grass,overstory,Industrial,"45°36.087'N, 073°30.618'W","26°C, Sunny ",0,4,0,15,,,,,,
+Promenade-Bellerive,IND13-MED01,08/16/2022,"EP, AT, LG",Grass,overstory,Industrial,"45°35.956'N, 073°30.614'W","27°C, Sunny ",20,65,0,61,,,,,,
+Promenade-Bellerive,IND13-MED02,08/16/2022,"EP, AT, LG",Grass,overstory,Industrial,"45°36.219'N, 073°30.608'W","26°C, Sunny ",73,94,1,0,,,,,,
+Promenade-Bellerive,IND13-MED04,08/16/2022,"EP, AT, LG",,"shrub, overstory",Industrial,"45°35.547'N, 073°30.471'W","26°C, Sunny ",79,28,52,82,,,,,,
+Arthur-Therrien,IND2-HIGH04,08/17/2022,"LG, EP","dirt path, bare soil, leaf litter","shrub, overstory, understory",Industrial,"45°28.039'N, 073°33.588'W","20°C, Cloudy",96,89,90,95,,,,,,
+Arthur-Therrien,IND2-HIGH06,08/17/2022,"LG, EP","leaf litter, bare soil, dirt path","shrub, overstory, understory",Industrial,"45°28.010'N, 073°33.587'W","22°C, Cloudy",93,92,96,94,,,,,,
+Arthur-Therrien,IND2-HIGH07,08/17/2022,"LG, EP","Grass, bare soil",overstory,Industrial,"45°28.158'N, 073°33.608'W","19°C, Cloudy",76,89,91,83,,,,,,
+Arthur-Therrien,IND2-LOW01,08/17/2022,"LG, EP","grass, bare soil path, cement path",overstory,Industrial,"45°27.870'N, 073°33.632'W","24°C, Sunny ",0,6,0,54,,,,,,
+Arthur-Therrien,IND2-LOW02,08/17/2022,"LG, EP",grass,overstory,Industrial,"45°27.825'N, 073°33.694'W","24°C, Sunny ",0,2,0,8,,,,,,
+Arthur-Therrien,IND2-LOW04,08/17/2022,"LG, EP","grass, cement path","shrub, overstory",Industrial,"45°27.838'N, 073°33.633'W","24°C, Sunny ",3,7,0,22,,,,,,
+Arthur-Therrien,IND2-MED04,08/17/2022,"LG, EP",grass,"overstory, understory",Industrial,"45°27.953'N, 073°33.636'W","22°C, Cloudy ",84,20,76,61,,,,,,
+Arthur-Therrien,IND2-MED06,08/17/2022,"LG, EP","Wood chips, grass, bare soil","overstory, understory",Industrial,"45°28.121'N, 073°33.567'W","19°C, Cloudy",72,78,74,66,,,,,,
+Arthur-Therrien,IND2-MED07,08/17/2022,"LG, EP","grass, leaf litter, bare soil, cement path","shrub, overstory, understory",Industrial,,"24°C, Sunny ",40,73,83,14,,,,,,
+Baldwin ,IND3-HIGH01,06/29/2022,"IR,EP,MP,LG","grass, dirt path ",overstory,Industrial,"45°32.056'N, 073°33.776'W","23°C, Sunny ",61,90,96,72,,,,,,
+Baldwin ,IND3-HIGH03 ,06/29/2022,"IR,EP,MP,LG","grass, dirt path",overstory,Industrial,"45°32.049'N, 073°33.745'W ","23°C, Sunny ",96,25,5,67,,,,,,
+Baldwin ,IND3-HIGH05 ,06/29/2022,"IR,EP,MP,LG","grass, cement, dirt path",overstory,Industrial,"45°32.081'N, 073°33.730'W","23°C, Sunny ",8,88,74,74,Some overlap on Soth end ,,,,,
+Baldwin ,IND3-LOW01 ,06/29/2022,"IR,EP,MP,LG","grass, dirt path ",overstory,Industrial,"45°32.072'N, 073°33.779' W","23°C, Sunny ",92,79,26,40,,,,,,
+Baldwin ,IND3-LOW02 ,06/29/2022,"IR,EP,MP,LG","grass, dirt path",overstory,Industrial,"45°32.107'N, 073°33.739'W","23°C, Sunny ",0,64,0,73,,,,,,
+Baldwin ,IND3-MED01,06/29/2022,"IR,EP,MP,LG","grass, dirt path ",overstory,Industrial,"45°32.063'N, 073°775' W","23°C, Sunny ",4,80,55,2,A little bit of overlap ,,,,,
+Baldwin ,IND3-MED02,06/29/2022,"IR,EP,MP,LG","grass, dirt path",overstory,Industrial,"45°32.069'N, 073°33.732'W ","23°C, Sunny ",80,75,50,9,,,,,,
+Baldwin ,IND3-MED05,06/29/2022,"IR,EP,MP,LG","bare soil, grass, dirt path ",overstory,Industrial,"45°32.105'N, 073°761'W","23°C, Sunny ",33,78,83,54,bit of overlap on east side with low point ,,,,,
+Félix-Leclerc,IND5-HIGH01,08/10/2022,"EP, LG, IR","Leaf litter, bare soil, grass","overstory, understory",Industrial,"45°35.460'N, 073°33.723'W","19°C, Sunny",63,91,90,95,,,,,,
+Félix-Leclerc,IND5-HIGH04,08/10/2022,"EP, LG, IR","Leaf litter, bare soil, herbaceous vegetation","shrub, overstory, understory",Industrial,"45°33.344'N, 073°33.659'W","20°C, Sunny",69,90,95,94,,,,,,
+Félix-Leclerc,IND5-HIGH06,08/10/2022,"EP, LG, IR","Leaf litter, bare soil, grass","shrub, overstory, understory",Industrial,"45°35.435'N, 073°33.679'W","19°C, Sunny",94,95,83,94,,,,,,
+Félix-Leclerc,IND5-LOW01,08/10/2022,"EP, LG, IR","Grass, cement path",overstory,Industrial,"45°35.509'N, 073°33.997'W","20°C, Sunny",45,4,56,3,,,,,,
+Félix-Leclerc,IND5-LOW03,08/10/2022,"EP, LG, IR","Grass, cement path",overstory,Industrial,"45°35.352'N, 073°33.700'W","20°C, Sunny",15,0,12,0,,,,,,
+Félix-Leclerc,IND5-LOW05,08/10/2022,"EP, LG, IR","Grass, cement path",overstory,Industrial,"45°35.386'N, 073°33.835'W","20°C, Cloudy",0,9,1,0,,,,,,
+Félix-Leclerc,IND5-MED01,08/10/2022,"EP, LG, IR",Grass,overstory,Industrial,"45°35.422'N, 073°33.994'W","20°C, Sunny",57,40,0,,,,,,,
+Félix-Leclerc,IND5-MED03,08/10/2022,"EP, LG, IR","Grass, cement path","overstory, understory",Industrial,"45°35.396'N, 073°33.614'W","20°C, Sunny",87,0,29,24,,,,,,
+Félix-Leclerc,IND5-MED04,08/10/2022,"EP, LG, IR","Cement path, grass, soil, leaf litter","shrub, overstory, understory",Industrial,"45°35.390'N, 073°33.646'W","20°C, Sunny",86,25,4,67,,,,,,
+Frédéric-Back,IND6-HIGH01,08/11/2022,"EP, LG, IR","Grass, herbaceous vegetation, gravel path",overstory,Industrial,"45°33.843'N, 073°37.176'W","20°C, Sunny",95,90,85,94,,,,,,
+Frédéric-Back,IND6-HIGH03,08/11/2022,"EP, LG, IR","Herbaceous vegetation, leaf litter, bare soil","shrub, overstory, understory",Industrial,"45°33.693'N, 073°37.137'W","19°C, Cloudy",88,80,92,90,,,,,,
+Frédéric-Back,IND6-LOW01,08/11/2022,"EP, LG, IR","Herbaceous vegetation, gravel path",overstory,Industrial,"45°33.875'N, 073°37.48'W","20°C, Sunny",8,0,7,0,,,,,,
+Frédéric-Back,IND6-LOW03,08/11/2022,"EP, LG, IR","Herbaceous vegetation, gravel path, mulch",overstory,Industrial,"45°33.812'N, 073°37.137'W","20°C, Sunny",0,50,25,0,,,,,,
+Frédéric-Back,IND6-LOW05,08/11/2022,"EP, LG, IR","Herbaceous vegetation, gravel path",overstory,Industrial,"45°33.837'N, 073°37.429'W","20°C, Sunny",4,0,41,2,,,,,,
+Frédéric-Back,IND6-MED01,08/11/2022,"EP, LG, IR","Herbaceous vegetation, gravel path",overstory,Industrial,"45°33.793'N, 073°37.166'W","20°C, Sunny",6,68,90,3,,,,,,
+Frédéric-Back,IND6-MED02,08/11/2022,"EP, LG, IR","Herbaceous vegetation, sidewalk",overstory,Industrial,"45°33.814'N, 073°37.110'W","20°C, Sunny",86,76,90,4,,,,,,
+Frédéric-Back,IND6-MED03,08/11/2022,"EP, LG, IR","Grass, cement path",overstory,Industrial,"45°33.618'N, 073°36.964'W","20°C, Sunny",88,85,88,95,,,,,,
+Botanical Gardens ,IND7-HIGH02 ,06/29/2022,"IR,EP,LG","grass, leaf litter, cement ","shrub, overstory",Industrial,"45°33.789'N, 073°34.272'W","24°C, sunny ",89,93,91,85,,,,,,
+Botanical Gardens ,IND7-HIGH04,06/29/2022,"IR,EP,LG","grass, dirt path ",overstory,Industrial,"45°33.728'N, 073°34.178'W","24°C, overcast ",95,93,96,96,,,,,,
+Botanical Gardens ,IND7-HIGH05 ,06/29/2022,"IR,EP,LG","grass, dirt, leaf litter ","shrub, overstory",Industrial,"45°33.759'N, 073°34.294'W",24°C sunny ,87,92,89,86,,,,,,
+Botanical Gardens ,IND7-LOW01,06/29/2022,"IR,EP,LG","grass, dirt path ",overstory,Industrial,"45°33.777'N, 073°34.208'W","22°C, raining ",3,4,9,4,,,,,,
+Botanical Gardens ,IND7-LOW03,06/29/2022,"IR,EP,LG","grass, dirt path ",overstory,Industrial,"45°33.805'N, 073°34.216'W","22°C, overcast ",9,1,69,16,,,,,,
+Botanical Gardens ,IND7-LOW04,06/29/2022,"IR,EP,LG",grass,overstory,Industrial,"45°33.766'N, 073°34.166'W","22°C, overcast and rainy ",9,45,7,36,,,,,,
+Botanical Gardens ,IND7-MED02,06/29/2022,"IR,EP,LG","grass, leaf litter ",overstory,Industrial,"45°33.764'N, 073°34.189'W","21°C, overcast",6,91,14,82,,,,,,
+Botanical Gardens ,IND7-MED04,06/29/2022,"IR,EP,LG","grass, bare dirt ",overstory,Industrial,"45°33.714'N, 073°34.200'W","24°C, overcast ",51,21,87,89,,,,,,
+Botanical Gardens ,IND7-MED05 ,06/29/2022,"IR,EP,LG","grass, cement ",overstory,Industrial,"45°33.701'N, 073°34.188'W","26°C, sunny",81,95,91,81,,,,,,
+Lafond ,IND8-HIGH01,06/20/2022,"EP,IR,MP",grass,overstory,Industrial ,"45°33.160'N, 073°34.173'W","20°C, sunny ",94,96,78,93,,,,,,
+Lafond ,IND8-HIGH03,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial ,"45°33.154'N, 073°33.979'W","20°C, sunny ",16,88,12,57,,,,,,
+Lafond ,IND8-HIGH04,06/20/2022,"EP,IR,MP","grass, bare soil, leaf litter ",overstory,Industrial ,"45°33.122'N, 073°34.193'W","20°C, sunny ",93,94,90,96,,,,,,
+Lafond ,IND8-LOW02,06/20/2022,"EP,IR,MP","grass, cement path",overstory,Industrial,"45°33.117'N, 073°34.021'W","20°C, sunny ",0,0,0,0,,,,,,
+Lafond ,IND8-LOW03,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial ,"45°33.160'N, 073°34.058'W`","20°C, sunny ",15,35,19,18,,,,,,
+Lafond ,IND8-LOW05,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial ,"45°33.147'N, 073°34.021'W","20°C, sunny ",4,26,38,52,,,,,,
+Lafond ,IND8-MED01,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial,"45°33.107'N, 073°34.026'W","20°C, sunny ",20,30,69,81,,,,,,
+Lafond ,IND8-MED03,06/20/2022,"EP,IR,MP","grass, cement path ",overstory,Industrial,"45°33.091'N, 073v34.040'W","20°C, sunny ",85,32,72,84,,,,,,
+Lafond ,IND8-MED05,06/20/2022,"EP,IR,MP",grass,overstory,Industrial ,"45°33.182'N, 073°34.159'W","20°C, sunny ",95,5,4,96,,,,,,
+Lalancette,IND9-HIGH02,08/16/2022,"AT, LG, EP","Bare soil, grass, gravel path","overstory, understory",Industrial,"45°32.950'N, 073°32.979'W","22°C, Sunny ",95,93,77,96,,,,,,
+Lalancette,IND9-HIGH04,08/16/2022,"AT, LG, EP","Grass, bare soil",overstory,Industrial,"45°32.959'N, 073°32.933'W","22°C, Sunny ",90,91,92,88,,,,,,
+Lalancette,IND9-HIGH05,08/16/2022,"AT, LG, EP","Grass, cement path","overstory, understory",Industrial,"45°32.927'N, 073°32.961'W","23°C, Sunny ",94,87,84,79,,,,,,
+Lalancette,IND9-LOW04,08/16/2022,"AT, LG, EP","Cement path, water park, grass",overstory,Industrial,"45°32.915'N, 073°32.941'W","21°C, Sunny ",13,23,0,5,,,,,,
+Lalancette,IND9-MED01,08/16/2022,"EP, LG",Cement path. grass,"shrub, overstory",Industrial,"45°32.900'N, 073°32.964'W","21°C, Sunny",35,50,5,89,,,,,,
+Lalancette,IND9-MED02,08/16/2022,"AT, LG, EP","Cement path, gravel lawn, grass",overstory,Industrial,"45°32.888'N, 073°32.934'W","21°C, Sunny",3,87,60,67,,,,,,
+Lalancette,IND9-MED03,08/16/2022,"AT, LG, EP","Cement, grass, woodchips (playground)",overstory,Industrial,"45°32.949'N, 073°32.928'W","22°C, Sunny ",14,9,27,70,,,,,,
