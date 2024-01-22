@@ -1,0 +1,98 @@
+Any data within subfolders has according metadata within the same subfolder. 
+
+This data and metadata accompanies Cooling effect provided by urban parks minimally affected by historical legacies, Richmond et al. (In prep).
+
+dataset: studyparks.csv
+This dataset lists all parks used in our study. 
+ParkOfficial: Official name as listed in City of Montreal documents or on Open Street Map
+Name: Unofficial park name occasionally used throughout documents
+ObjectID: placeholder column (not meaningful)
+Established: Year that the park was established (or closest year as per historical documents)
+PastLandUse: Land use type immediately prior to park establishment
+
+
+dataset: trees_openrefine.csv
+This dataset lists all trees measured during the 2022 field season. Spelling and typos were addressed using OpenRefine.
+Park: park name
+PlotID: plot ID (ParkCode-CanopyCode)
+Date: date of sampling
+Observers: people working on sampling for that plot, initials
+TreeNumber: nth tree for that plot 
+CommonName: common name of tree (if tree is dead, Dead is used here. If tree is unknown, Unknown is used here)
+Genus: scientific genus name of tree 
+Species: scientific species name of tree (if not sure, sp. is written)
+DBH: diameter at breast height (cm), if tree has a DBH < 5 cm, categories of 1-3 and 3-5 are used to classify instead of measuring
+Overstory/Understory: categorical variable assigned to each tree, determining if they are an overstory or understory tree 
+Comments: any comments made in the field for a specific tree
+
+
+
+dataset: treesraw.csv
+This dataset lists all trees measured during the 2022 field season. Spelling and typos still in dataset.
+Park: park name
+PlotID: plot ID (ParkCode-CanopyCode)
+Date: date of sampling
+Observers: people working on sampling for that plot, initials
+TreeNumber: nth tree for that plot 
+CommonName: common name of tree (if tree is dead, Dead is used here. If tree is unknown, Unknown is used here)
+Genus: scientific genus name of tree 
+Species: scientific species name of tree (if not sure, sp. is written)
+DBH: diameter at breast height (cm), if tree has a DBH < 5 cm, categories of 1-3 and 3-5 are used to classify instead of measuring
+Overstory/Understory: categorical variable assigned to each tree, determining if they are an overstory or understory tree 
+Comments: any comments made in the field for a specific tree
+
+
+dataset: Park.densiometer.csv
+Dataset containing plot-level variables collected in the field but not used for analysis.
+Park: park name
+PlotID: plot ID (ParkCode-CanopyCode)
+Date: date of sampling
+Observers: people working on sampling for that plot, initials
+GroundCover: general ground cover of plot (grass, cement, shrubs, etc)
+VegetationLevels: how many vegetation levels are present in the plot (herbaceous, shrub, understory, overstory)
+PastLandUse: past land use immediately prior to development
+Coordinates: plot location (crs WGS 84)
+Temperature: temperature and weather on day of sampling
+DensiometerN: number of canopy openings in the North direction using a densiometer (multiply by 1.04 for % canopy cover)
+DensiometerS: number of canopy openings in the South direction using a densiometer (multiply by 1.04 for % canopy cover)
+DensiometerE: number of canopy openings in the East direction using a densiometer (multiply by 1.04 for % canopy cover)
+DensiometerW: number of canopy openings in the West direction using a densiometer (multiply by 1.04 for % canopy cover)
+Comments: any comments on plot made in the field 
+Park size: size of whole park (ha) 
+Established: Year that the park was established (or closest year as per historical documents)
+Park age: 2022 - year of establishment	
+Conservation area: is this plot in a conservation area?
+Complexity: number of levels of complexity (aka vegetation levels)
+
+
+dataset: mon_historical_for_boundaries.gpkg
+This dataset was hand-drawn in QGIS using historical documents and satellite imagery, to outline the boundaries within our study parks of forested land.
+Name: park name
+PastLandUse: historical land use (forested)
+geometry: polygon borders (crs = WGS 84)
+
+
+
+dataset: mon_historical_mix_boundaries.gpkg
+This dataset was hand-drawn in QGIS using historical documents and satellite imagery, to outline the boundaries of multiple different land-use types for parks that have multiple histories.
+Name: park name
+PastLandUse: historical land use
+geometry: polygon borders (crs = WGS 84)
+
+
+dataset: gps_sppts.gpkg 
+This dataset is the coordinates of sampling points from summer 2022 recorded on the Garmin GPS.
+Name = name of sampling plot 
+geom = point coordinates (crs = WGS 84)
+
+
+dataset: species_ranges.csv
+This dataset indicates if tree species are native to the Eastern Temperate Forest, with data taken from Katie Philp's honours thesis.
+Species Code: 4-5 letter code that indicates the species 
+Scientific Name: full scientific name of the species
+Common Name: common name of the species (in english, QC)
+Native_ETF: is the species native to the Eastern Temperate Forest (yes/no)
+Invasive: is the species invasive in Quebec (yes/no)
+Origin source: where did the species originate from 
+Ivasive Source: where did the invasive originate from (province or state or country)
+Comments: extra comments
