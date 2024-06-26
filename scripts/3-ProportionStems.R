@@ -49,6 +49,12 @@ inv_prop_sp <- trees_adult %>%
   select(c(Park, Scientific.Name, Invasive)) %>% 
   summarize(PropInvSp = sum(Invasive == "Y", na.rm = T)/n())
 
+inv_prop_sp_plot <- trees_adult %>% 
+  group_by(PlotID) %>% 
+  distinct(Scientific.Name, .keep_all = T) %>% 
+  select(c(Park, Scientific.Name, Invasive)) %>% 
+  summarize(PropInvSp = sum(Invasive == "Y", na.rm = T)/n())
+
 
 # Calculate Proportion Invasive Stems -------------------------------------
 
@@ -56,8 +62,13 @@ inv_prop <- trees_adult %>%
   group_by(Park) %>%
   summarize(PropInv = sum(Invasive == "Y", na.rm = T)/n())
 
+inv_prop_plot <- trees_adult %>%
+  group_by(PlotID) %>%
+  summarize(PropInv = sum(Invasive == "Y", na.rm = T)/n())
 
 inv <- inner_join(inv_prop_sp, inv_prop)
+inv_plot <- inner_join(inv_prop_sp_plot, inv_prop_plot)
 
 # Save --------------------------------------------------------------------
 write.csv(inv, "output/ProportionInvasives.csv")
+write.csv(inv_plot, "output/ProportionInvasivesPlot.csv")
