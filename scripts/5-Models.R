@@ -1,8 +1,14 @@
-#pakages 
-library(performance)
-library(visreg)
 
-#Testing Collinearity 
+# Packages ----------------------------------------------------------------
+library(sf)
+library(performance)
+
+
+# Data --------------------------------------------------------------------
+read <- read.csv("output/FullDataset.csv")
+
+# Testing collinearity ----------------------------------------------------
+
 read <- readRDS("output/FullDataset.rds")
 age.size <- cor.test(read$Park.size, read$Park.age)
 age.size
