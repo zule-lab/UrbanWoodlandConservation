@@ -41,33 +41,23 @@ trees_adult <- trees_adult %>%
 trees_adult <- trees_adult %>%
   filter(CommonName != "Dead")
 
-# Calculate Proportion Invasive -------------------------------------------
 
-# per park 
+# Calculate Proportion Invasive Species -----------------------------------
+inv_prop_sp <- trees_adult %>% 
+  group_by(Park) %>% 
+  distinct(Scientific.Name, .keep_all = T) %>% 
+  select(c(Park, Scientific.Name, Invasive)) %>% 
+  summarize(PropInvSp = sum(Invasive == "Y", na.rm = T)/n())
+
+
+# Calculate Proportion Invasive Stems -------------------------------------
+
 inv_prop <- trees_adult %>%
   group_by(Park) %>%
   summarize(PropInv = sum(Invasive == "Y", na.rm = T)/n())
 
-# per plot
-inv_prop_plot <- trees_adult %>%
-  group_by(PlotID) %>%
-  summarize(PropInv = sum(Invasive == "Y", na.rm = T)/n())
 
-
-# Extra  ------------------------------------------------------------------
-#Proportion of Non-native species per park
-inv_Non_Native <- trees_adult %>%
-  group_by(Park) %>%
-  summarize(PropNN = sum(Native_ETF == "N" & Invasive == "N", na.rm = T)/n())
-
-#Proportion of Native per Park
-inv_Native <- trees_adult %>%
-  group_by(Park) %>%
-  summarize(PropNative = sum(Native_ETF == "Y", na.rm = T)/n())
-
+inv <- inner_join(inv_prop_sp, inv_prop)
 
 # Save --------------------------------------------------------------------
-write.csv(inv_prop, "output/ProportionInvasives.csv")
-write.csv(inv_prop_plot, "output/ProportionInvasivesPlot.csv")
-write.csv(inv_Native, "output/ProportionNatives.csv")
-write.csv(inv_Non_Native, "output/ProportionNonNative.csv")
+write.csv(inv, "output/ProportionInvasives.csv")
