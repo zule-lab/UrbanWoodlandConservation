@@ -9,7 +9,7 @@ cancov <- read_stars("input/660_IndiceCanopee_2021.tif")
 # sampling points from GPS
 pts <- read_sf("input/gps_sppts.gpkg")
 # park polygons
-parks <- read_sf("output/study_parks_spatial.gpkg")
+parks <- read_sf("input/study_parks_spatial.gpkg")
 
 # convert to same projection as canopy cover 
 pts_trans <- st_transform(pts, st_crs(cancov))
