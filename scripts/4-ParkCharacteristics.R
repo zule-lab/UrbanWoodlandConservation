@@ -46,5 +46,5 @@ full <- inner_join(cdi, parks_for, by = "Park")
 
 # Save --------------------------------------------------------------------
 
-write.csv(full, "output/FullDataset.csv")
+write_sf(full, "output/FullDataset.gpkg")
 
