@@ -12,8 +12,6 @@ parks <- read.csv("input/Park.densiometer.csv")
 canopy <- read_sf("output/canopy_parks.gpkg")
 invasive <- read.csv("output/ProportionInvasives.csv")
 diversity <- read.csv("output/treediversity.csv")
-native <- read.csv("output/ProportionNatives.csv")
-nonnative <- read.csv("output/ProportionNonNative.csv")
 
 
 # Cleaning ----------------------------------------------------------------
@@ -44,12 +42,9 @@ canopy$Park[canopy$Park == "L'Anse-À-L'Orme"] <- "L'Anse-à-l'Orme"
 
 cd <- inner_join(canopy, diversity_w, by = "Park")
 cdi <- inner_join(cd, invasive, by = "Park")
-cdin <- inner_join(cdi, native, by ="Park")
-cdinn <- inner_join(cdin, nonnative, by="Park") #Not used in models, but added to test collineality
-full <- inner_join(cdinn, parks_for, by = "Park")
-
+full <- inner_join(cdi, parks_for, by = "Park")
 
 # Save --------------------------------------------------------------------
 
-saveRDS(full, "output/FullDataset.rds")
+write.csv(full, "output/FullDataset.csv")
 
