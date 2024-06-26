@@ -1,5 +1,5 @@
 # Packages ----------------------------------------------------------------
-p <- c("stringr", "dplyr", "tidyr", "tibble", "ggplot2", "iNEXT", "sf", "stars")
+p <- c("stringr", "dplyr", "tidyr", "tibble", "ggplot2", "iNEXT", "vegan")
 lapply(p, library, character.only = T)
 
 
@@ -31,9 +31,6 @@ trees_for$Park <- as.factor(trees_for$Park)
 trees_for$PlotID <- as.factor(trees_for$PlotID)
 trees_for$SpCode <- as.factor(trees_for$SpCode)
 
-trees_for_overstory <- trees_for[trees_for$Overstory.Understory == "Overstory", ]
-trees_for_understory <- trees_for[trees_for$Overstory.Understory == "Understory", ]
-
 
 # Diversity Indices -------------------------------------------------------
 # Full Tree Dataset
@@ -56,52 +53,34 @@ ggiNEXT(out, type = 3)+ xlim(c(0,1)) +
 div <- estimateD(trees_list_inext, datatype="incidence_raw",
                  base="coverage", level=0.7828, conf=0.95)
 
-# overstory trees 
-trees_list_inext_overstory <- trees_for_overstory %>% 
-  group_by(Park) %>% 
-  group_map(~ group_by(.x, PlotID, SpCode) %>% 
-              tally() %>% 
-              pivot_wider(id_cols = SpCode, names_from = PlotID, values_from = n, values_fill = 0) %>%
-              mutate_if(is.numeric, ~1 * (. != 0)) %>%
-              column_to_rownames("SpCode")) %>%
-  setNames(unique(trees_for_overstory$Park))
+# Plot diversity  ---------------------------------------------------------
 
-out_over <- iNEXT(trees_list_inext_overstory, datatype = "incidence_raw", q=0)
+# plots are 100% sampled and are the same size, so we will not calculate diversity indices with iNEXT
 
-ggiNEXT(out_over, type = 3)+ xlim(c(0,1)) + 
-  theme_classic(base_size = 15) + 
-  scale_fill_discrete() + 
-  scale_color_discrete()
+plots <- trees_for %>% 
+  unite(Scientific.Name, c("Genus", "Species"), sep = " ") %>% 
+  select(c(PlotID, Scientific.Name)) %>% 
+  group_by(PlotID, Scientific.Name) %>% 
+  summarize(n = n()) %>% 
+  pivot_wider(id_cols = "PlotID", names_from = 'Scientific.Name', values_from = "n", values_fill = 0,
+              values_fn = first) %>% 
+  mutate_if(is.numeric, ~1 * (. != 0)) %>% 
+  select(-(" ")) %>% 
+  column_to_rownames("PlotID")
 
-div_overstory <- estimateD(trees_list_inext_overstory, datatype="incidence_raw",
-                           base="coverage", level=0.7159, conf=0.95)
+sr <- rowSums(plots)
+shan <- diversity(plots, index = "shannon")
 
-# understory trees 
-trees_list_inext_understory <- trees_for_understory %>% 
-  group_by(Park) %>% 
-  group_map(~ group_by(.x, PlotID, SpCode) %>% 
-              tally() %>% 
-              pivot_wider(id_cols = SpCode, names_from = PlotID, values_from = n, values_fill = 0) %>%
-              mutate_if(is.numeric, ~1 * (. != 0)) %>%
-              column_to_rownames("SpCode")) %>%
-  setNames(unique(trees_for_understory$Park))
+plot_div <- plots %>% 
+  rownames_to_column("PlotID") %>% 
+  select(PlotID)
 
-out_under <- iNEXT(trees_list_inext_understory, datatype = "incidence_raw", q=0)
-
-ggiNEXT(out_under, type = 3)+ xlim(c(0,1)) + 
-  theme_classic(base_size = 15) + 
-  scale_fill_discrete() + 
-  scale_color_discrete()
-
-div_understory <- estimateD(trees_list_inext_understory, datatype="incidence_raw",
-                            base="coverage", level=0.6343, conf=0.95)
-
-# join 
-div_full <- left_join(div, div_overstory, suffix = c("", "_Over"), by = c("Assemblage", "Order.q"))
-div_full <- left_join(div_full, div_understory, suffix = c("", "_Under"), by = c("Assemblage", "Order.q"))
-
+plot_div <- cbind(plot_div, sr)
+plot_div <- cbind(plot_div, shan)
+rownames(plot_div) <- NULL
 
 # Save --------------------------------------------------------------------
 
 write.csv(trees_for, "output/cleanedtrees.csv")
-write.csv(div_full, "output/treediversity.csv")
+write.csv(div, "output/treediversity_park.csv")
+write.csv(plot_div, "output/treediversity_plot.csv")
