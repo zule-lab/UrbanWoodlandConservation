@@ -1,4 +1,4 @@
-cleaned_trees <- function(trees_raw) {
+cleaned_trees <- function(trees) {
   
   # Data Cleaning -----------------------------------------------------------
   trees_for <- trees[grepl("FOR", trees[["PlotID"]]), ]
