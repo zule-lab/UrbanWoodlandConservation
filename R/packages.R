@@ -1,4 +1,5 @@
 library(targets)
+library(qs)
 library(tarchetypes)
 library(renv)
 
@@ -17,7 +18,7 @@ library(sf)
 library(stars)
 
 library(brms)
-#library(cmdstanr)
-#library(zarg)
+library(cmdstanr)
+library(zarg)
 library(tidybayes)
 library(bayesplot)
