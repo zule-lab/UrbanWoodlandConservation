@@ -16,7 +16,6 @@ activate()
 snapshot()
 restore()
 
-
 # Targets -----------------------------------------------------------------
 
 c(
@@ -40,51 +39,116 @@ c(
   ),
   
   tar_target(
-    trees_clean,
-    trees_cleaned(trees_raw)
-  ),
-  
-  tar_target(
-    tree_div_plot,
-    plot_tree_div(trees_clean)
-  ),
-  
-  tar_target(
-    tree_div_park,
-    park_tree_div(trees_clean)
-  ),
-  
-  tar_target(
-    canopy_plot,
-    plot_canopy("input/660_IndiceCanopee_2021.tif", "input/gps_sppts.gpkg", "input/study_parks_spatial.gpkg")
-  ),
-  
-  tar_target(
-    canopy_park,
-    park_canopy("input/660_IndiceCanopee_2021.tif", "input/gps_sppts.gpkg", "input/study_parks_spatial.gpkg")
-  ),
-  
-  tar_target(
-    invasive_plot,
-    plot_invasive(trees_clean, trees_ranges)
-  ),
-  
-  tar_target(
-    invasive_park,
-    park_invasive(trees_clean, trees_ranges)
-  ),
-  
-  tar_target(
     data_plot,
-    plot_data(parks, tree_div_plot, canopy_plot, invasive_plot)
+    plot_data(trees_raw, trees_ranges, parks, "input/660_IndiceCanopee_2021.tif", "input/gps_sppts.gpkg")
   ),
   
   tar_target(
     data_park,
-    park_data(parks, tree_div_park, canopy_park, invasive_park)
+    park_data(trees_raw, trees_ranges, parks, "input/660_IndiceCanopee_2021.tif", "input/study_parks_spatial.gpkg")
+  ),
+  
+  zar_brms(
+    sr_park,
+    formula = SR_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+    family = gaussian(), 
+    prior = c(
+      prior(normal(0, 0.5), class = "b"),
+      prior(normal(0, 0.5), class = "Intercept"),
+      prior(exponential(1), class = "sigma")),
+    backend = 'cmdstanr',
+    data = data_park,
+    chains = 4,
+    iter = 1000,
+    cores = 4),
+  
+  zar_brms(
+    shan_park,
+    formula = Shannon_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+    family = gaussian(), 
+    prior = c(
+      prior(normal(0, 0.5), class = "b"),
+      prior(normal(0, 0.5), class = "Intercept"),
+      prior(exponential(1), class = "sigma")),
+    backend = 'cmdstanr',
+    data = data_park,
+    chains = 4,
+    iter = 1000,
+    cores = 4),
+  
+  zar_brms(
+    complexity_park,
+    formula = MeanComplexity_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+    family = gaussian(), 
+    prior = c(
+      prior(normal(0, 0.5), class = "b"),
+      prior(normal(0, 0.5), class = "Intercept"),
+      prior(exponential(1), class = "sigma")),
+    backend = 'cmdstanr',
+    data = data_park,
+    chains = 4,
+    iter = 1000,
+    cores = 4),
+  
+  zar_brms(
+    inv_sp_park,
+    formula = PropInvSp_s ~ 1 + Conservation.area + Park.size_s,
+    family = gaussian(), 
+    prior = c(
+      prior(normal(0, 0.5), class = "b"),
+      prior(normal(0, 0.5), class = "Intercept"),
+      prior(exponential(1), class = "sigma")),
+    backend = 'cmdstanr',
+    data = data_park,
+    chains = 4,
+    iter = 1000,
+    cores = 4),
+  
+  zar_brms(
+    inv_stems_park,
+    formula = PropInv_s ~ 1 + Conservation.area + Park.size_s,
+    family = gaussian(), 
+    prior = c(
+      prior(normal(0, 0.5), class = "b"),
+      prior(normal(0, 0.5), class = "Intercept"),
+      prior(exponential(1), class = "sigma")),
+    backend = 'cmdstanr',
+    data = data_park,
+    chains = 4,
+    iter = 1000,
+    cores = 4),
+  
+  tar_target(
+    model_list,
+    list(sr_park_brms_sample, shan_park_brms_sample, complexity_park_brms_sample, inv_sp_park_brms_sample, inv_stems_park_brms_sample) %>% 
+      setNames(., c('SR', 'Shannon', 'Complexity', 'Invasive_Species', 'Invasive_Stems'))
+  ),
+  
+  tar_target(
+    prior_model_list,
+    list(sr_park_brms_sample_prior, shan_park_brms_sample_prior, complexity_park_brms_sample_prior, inv_sp_park_brms_sample_prior, inv_stems_park_brms_sample_prior) %>% 
+      setNames(., c('SR', 'Shannon', 'Complexity', 'Invasive_Species', 'Invasive_Stems'))
+  ),
+  
+  tar_render(
+    prior_predictive,
+    'figures/diagnostics/prior_predictive.qmd'
+  ),
+  
+  tar_render(
+    model_diagnostics,
+    'figures/diagnostics/model_diagnostics.qmd'
   )
   
   
-  
-  
 )
+
+
+## TODO 
+# model 
+# check priors 
+# check model diagnostics 
+# plot model outcomes 
+# add code for figure 1 - map 
+# model plot data?
+# NOTE: if using plot data - missing some canopy and have 96 plots instead of 92

@@ -1,0 +1,81 @@
+---
+title: "TITLE"
+format:
+  pdf:
+    fig-width: 12
+    fig-height: 14
+knitr:
+  opts_knit:
+    root.dir: "home/icrichmond/erica-490"
+---
+
+Authors: Erica Padvaiskas^1, Isabella C. Richmond^1, Carly D. Ziter^1^\*
+
+1 Department of Biology, Concordia University, Montreal Canada, H4B 1R6
+
+\* carly.ziter@concordia.ca 
+
+```{r, echo=FALSE, eval=TRUE, warning=FALSE, message=FALSE}
+source('R/packages.R')
+
+model_list <- tar_read(model_list)
+
+plot_model <- function(model){
+    
+    # basic model fit plots
+    plot(model)
+  
+    # Gelman plot
+    ac <- as_draws_df(model) %>% 
+      mutate(chain = .chain) %>% 
+      mcmc_acf(pars = vars(b_Intercept), lags = 35)
+    
+    plot(ac)
+  
+    coda::gelman.plot(as.mcmc(model)[, "b_Intercept", ])
+  
+    # posterior check
+    plot(pp_check(model, ndraws = 100))
+  }
+```
+
+## Model Diagnostic Plots
+
+These model diagnostic plots assess whether the chains of our models are converged and well mixed, and if the model is well specified and has an adequate fit.
+
+The first plot of the series shows trace plots for each of our parameters, where we want to see stationary and well-mixed chains. The second plot shows an autocorrelation plot by chain and parameter. We want our autocorrelation to quickly drop to zero with increasing lag. Thirdly, the Gelman plot indicates if the chains converge, where we want the value to decrease by the end of runtime. Finally, we have the posterior predictive check where we want the black line to be within/close to the blue lines, to indicate that our model is adequately generative.
+
+## Model 1: Species Richness 
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+mod <- model_list['SR']
+plot_model(mod[[1]])
+```
+
+## Model 2: Shannon Diversity
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+mod <- model_list['Shannon']
+plot_model(mod[[1]])
+```
+
+## Model 3: Vegetative Complexity
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+mod <- model_list['Complexity']
+plot_model(mod[[1]])
+```
+
+## Model 4: Proportion of Invasive Species
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+mod <- model_list['Invasive_Species']
+plot_model(mod[[1]])
+```
+
+## Model 5: Proportion of Invasive Stems
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+mod <- model_list['Invasive_Stems']
+plot_model(mod[[1]])
+```
