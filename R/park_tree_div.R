@@ -9,7 +9,7 @@ park_tree_div <- function(trees_clean){
                 pivot_wider(id_cols = SpCode, names_from = PlotID, values_from = n, values_fill = 0) %>%
                 mutate_if(is.numeric, ~1 * (. != 0)) %>%
                 column_to_rownames("SpCode")) %>%
-    setNames(unique(trees_for$Park))
+    setNames(unique(trees_clean$Park))
   
   out <- iNEXT(trees_list_inext, datatype = "incidence_raw", q=0)
   
