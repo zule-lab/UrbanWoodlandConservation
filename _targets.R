@@ -77,13 +77,6 @@ c(
   ),
   
   tar_target(
-    inv_sp_sd_park,
-    glm(formula = PropInvSp_sd ~ 1 + Conservation.area + Park.size,
-        family = gaussian(), 
-        data = data_park)
-  ),
-  
-  tar_target(
     inv_stems_park,
     glm(formula = PropInv ~ 1 + Conservation.area + Park.size,
         family = gaussian(), 
@@ -91,25 +84,24 @@ c(
   ),
   
   tar_target(
-    inv_stems_sd_park,
-    glm(formula = PropInv_sd ~ 1 + Conservation.area + Park.size,
-        family = gaussian(), 
-        data = data_park)
-  )
+    model_diagnostics,
+    diagnostics(sr_park, shan_park, complexity_park, 
+                inv_sp_park, inv_stems_park)
+  ),
   
-  #tar_render(
-  #  model_diagnostics,
-  #  'figures/diagnostics/model_diagnostics.qmd'
-  #)
+  tar_target(
+    figure_1,
+    make_figure_1("input/study_parks_spatial.gpkg")
+  )
   
   
 )
 
 
 ## TODO 
-# model 
-# check model diagnostics 
 # plot model outcomes 
 # add code for figure 1 - map 
+
+# switch to beta regression?
 # model plot data?
 # NOTE: if using plot data - missing some canopy and have 96 plots instead of 92
