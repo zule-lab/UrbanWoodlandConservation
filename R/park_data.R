@@ -148,10 +148,7 @@ park_data <- function(trees_raw, ranges, parks, canopy, parks_spatial){
     st_set_geometry(NULL) %>%
     inner_join(., full, by = "Park", suffix = c("_s", ""))
   
-  full_df <- full_s %>% 
-    mutate(PropInvSp_sd = sd(PropInvSp),
-           PropInv_sd = sd(PropInv))
   
-  return(full_df)
+  return(full_s)
   
 }
