@@ -48,97 +48,45 @@ c(
     park_data(trees_raw, trees_ranges, parks, "input/660_IndiceCanopee_2021.tif", "input/study_parks_spatial.gpkg")
   ),
   
-  zar_brms(
+  tar_target(
     sr_park,
-    formula = SR_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
-    family = gaussian(), 
-    prior = c(
-      prior(normal(0, 0.5), class = "b"),
-      prior(normal(0, 0.5), class = "Intercept"),
-      prior(exponential(1), class = "sigma")),
-    backend = 'cmdstanr',
-    data = data_park,
-    chains = 4,
-    iter = 1000,
-    cores = 4),
+    glm(SR_s ~ 1 + Conservation.area + Park.size_s + PropInv_s, 
+        family = gaussian(), 
+        data = data_park)
+    ),
   
-  zar_brms(
+  tar_target(
     shan_park,
-    formula = Shannon_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
-    family = gaussian(), 
-    prior = c(
-      prior(normal(0, 0.5), class = "b"),
-      prior(normal(0, 0.5), class = "Intercept"),
-      prior(exponential(1), class = "sigma")),
-    backend = 'cmdstanr',
-    data = data_park,
-    chains = 4,
-    iter = 1000,
-    cores = 4),
+    glm(formula = Shannon_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+        family = gaussian(),
+        data = data_park)
+    ),
   
-  zar_brms(
+  tar_target(
     complexity_park,
-    formula = MeanComplexity_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
-    family = gaussian(), 
-    prior = c(
-      prior(normal(0, 0.5), class = "b"),
-      prior(normal(0, 0.5), class = "Intercept"),
-      prior(exponential(1), class = "sigma")),
-    backend = 'cmdstanr',
-    data = data_park,
-    chains = 4,
-    iter = 1000,
-    cores = 4),
+    glm(formula = MeanComplexity_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+        family = gaussian(), 
+        data = data_park)
+    ),
   
-  zar_brms(
+  tar_target(
     inv_sp_park,
-    formula = PropInvSp_s ~ 1 + Conservation.area + Park.size_s,
-    family = gaussian(), 
-    prior = c(
-      prior(normal(0, 0.5), class = "b"),
-      prior(normal(0, 0.5), class = "Intercept"),
-      prior(exponential(1), class = "sigma")),
-    backend = 'cmdstanr',
-    data = data_park,
-    chains = 4,
-    iter = 1000,
-    cores = 4),
+    glm(formula = PropInvSp_s ~ 1 + Conservation.area + Park.size_s,
+        family = gaussian(), 
+        data = data_park)
+    ),
   
-  zar_brms(
+  tar_target(
     inv_stems_park,
-    formula = PropInv_s ~ 1 + Conservation.area + Park.size_s,
-    family = gaussian(), 
-    prior = c(
-      prior(normal(0, 0.5), class = "b"),
-      prior(normal(0, 0.5), class = "Intercept"),
-      prior(exponential(1), class = "sigma")),
-    backend = 'cmdstanr',
-    data = data_park,
-    chains = 4,
-    iter = 1000,
-    cores = 4),
+    glm(formula = PropInv_s ~ 1 + Conservation.area + Park.size_s,
+        family = gaussian(), 
+        data = data_park)
+    )
   
-  tar_target(
-    model_list,
-    list(sr_park_brms_sample, shan_park_brms_sample, complexity_park_brms_sample, inv_sp_park_brms_sample, inv_stems_park_brms_sample) %>% 
-      setNames(., c('SR', 'Shannon', 'Complexity', 'Invasive_Species', 'Invasive_Stems'))
-  ),
-  
-  tar_target(
-    prior_model_list,
-    list(sr_park_brms_sample_prior, shan_park_brms_sample_prior, complexity_park_brms_sample_prior, inv_sp_park_brms_sample_prior, inv_stems_park_brms_sample_prior) %>% 
-      setNames(., c('SR', 'Shannon', 'Complexity', 'Invasive_Species', 'Invasive_Stems'))
-  ),
-  
-  tar_render(
-    prior_predictive,
-    'figures/diagnostics/prior_predictive.qmd'
-  ),
-  
-  tar_render(
-    model_diagnostics,
-    'figures/diagnostics/model_diagnostics.qmd'
-  )
+  #tar_render(
+  #  model_diagnostics,
+  #  'figures/diagnostics/model_diagnostics.qmd'
+  #)
   
   
 )
@@ -146,7 +94,6 @@ c(
 
 ## TODO 
 # model 
-# check priors 
 # check model diagnostics 
 # plot model outcomes 
 # add code for figure 1 - map 
