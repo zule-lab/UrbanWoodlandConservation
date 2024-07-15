@@ -61,6 +61,12 @@ c(
   ),
   
   tar_target(
+    can_park,
+    betareg(formula = percan ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+        data = data_park)
+  ),
+  
+  tar_target(
     complexity_park,
     glm(formula = MeanComplexity ~ 1 + Conservation.area + Park.size_s + PropInv_s,
         family = gaussian(), 
@@ -69,22 +75,20 @@ c(
   
   tar_target(
     inv_sp_park,
-    glm(formula = PropInvSp ~ 1 + Conservation.area + Park.size,
-        family = gaussian(), 
+    betareg(formula = PropInvSp ~ 1 + Conservation.area + Park.size,
         data = data_park)
   ),
   
   tar_target(
     inv_stems_park,
-    glm(formula = PropInv ~ 1 + Conservation.area + Park.size,
-        family = gaussian(), 
+    betareg(formula = PropInv ~ 1 + Conservation.area + Park.size,
         data = data_park)
   ),
   
   tar_target(
     model_diagnostics,
-    diagnostics(sr_park, shan_park, complexity_park, 
-                inv_sp_park, inv_stems_park)
+    diagnostics(sr_park, shan_park, complexity_park,
+                can_park, inv_sp_park, inv_stems_park)
   ),
   
   tar_target(
@@ -107,8 +111,6 @@ c(
 
 
 ## TODO 
-# plot model outcomes 
-
-# switch to beta regression?
+# supplementary info
 # model plot data?
 # NOTE: if using plot data - missing some canopy and have 96 plots instead of 92
