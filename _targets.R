@@ -90,6 +90,16 @@ c(
   tar_target(
     figure_1,
     make_figure_1("input/study_parks_spatial.gpkg")
+  ),
+  
+  tar_target(
+    figure_complexity,
+    make_figure_complexity(complexity_park, data_park)
+  ),
+  
+  tar_target(
+    figure_invasive,
+    make_figure_invasive(inv_stems_park, data_park)
   )
   
   
