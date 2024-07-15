@@ -50,38 +50,52 @@ c(
   
   tar_target(
     sr_park,
-    glm(SR_s ~ 1 + Conservation.area + Park.size_s + PropInv_s, 
+    glm(SR ~ 1 + Conservation.area + Park.size_s + PropInv_s, 
         family = gaussian(), 
         data = data_park)
-    ),
+  ),
   
   tar_target(
     shan_park,
-    glm(formula = Shannon_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+    glm(formula = Shannon ~ 1 + Conservation.area + Park.size_s + PropInv_s,
         family = gaussian(),
         data = data_park)
-    ),
+  ),
   
   tar_target(
     complexity_park,
-    glm(formula = MeanComplexity_s ~ 1 + Conservation.area + Park.size_s + PropInv_s,
+    glm(formula = MeanComplexity ~ 1 + Conservation.area + Park.size_s + PropInv_s,
         family = gaussian(), 
         data = data_park)
-    ),
+  ),
   
   tar_target(
     inv_sp_park,
-    glm(formula = PropInvSp_s ~ 1 + Conservation.area + Park.size_s,
+    glm(formula = PropInvSp ~ 1 + Conservation.area + Park.size,
         family = gaussian(), 
         data = data_park)
-    ),
+  ),
+  
+  tar_target(
+    inv_sp_sd_park,
+    glm(formula = PropInvSp_sd ~ 1 + Conservation.area + Park.size,
+        family = gaussian(), 
+        data = data_park)
+  ),
   
   tar_target(
     inv_stems_park,
-    glm(formula = PropInv_s ~ 1 + Conservation.area + Park.size_s,
+    glm(formula = PropInv ~ 1 + Conservation.area + Park.size,
         family = gaussian(), 
         data = data_park)
-    )
+  ),
+  
+  tar_target(
+    inv_stems_sd_park,
+    glm(formula = PropInv_sd ~ 1 + Conservation.area + Park.size,
+        family = gaussian(), 
+        data = data_park)
+  )
   
   #tar_render(
   #  model_diagnostics,
