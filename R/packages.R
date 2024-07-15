@@ -21,7 +21,6 @@ library(sf)
 library(stars)
 library(osmdata)
 
-library(lme4)
-library(lmerTest)
+library(betareg)
 
 library(marginaleffects)
