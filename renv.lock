@@ -25,6 +25,14 @@
       "Hash": "065ae649b05f1ff66bb0c793107508f5",
       "Requirements": []
     },
+    "Formula": {
+      "Package": "Formula",
+      "Version": "1.2-5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "7a29697b75e027767a53fde6c903eca7",
+      "Requirements": []
+    },
     "KernSmooth": {
       "Package": "KernSmooth",
       "Version": "2.23-22",
@@ -154,6 +162,20 @@
       "Hash": "0c54cf3a08cc0e550fbd64ad33166143",
       "Requirements": [
         "backports"
+      ]
+    },
+    "betareg": {
+      "Package": "betareg",
+      "Version": "3.2-0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "9f0b950d4839841d6a7ade3e20de1680",
+      "Requirements": [
+        "Formula",
+        "flexmix",
+        "lmtest",
+        "modeltools",
+        "sandwich"
       ]
     },
     "boot": {
@@ -436,6 +458,18 @@
       "Hash": "aa5e1cd11c2d15497494c5292d7ffcc8",
       "Requirements": []
     },
+    "flexmix": {
+      "Package": "flexmix",
+      "Version": "2.3-19",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0cb3c4b251c2d3fd5923d3e7e6021ee2",
+      "Requirements": [
+        "lattice",
+        "modeltools",
+        "nnet"
+      ]
+    },
     "fontawesome": {
       "Package": "fontawesome",
       "Version": "0.5.2",
@@ -496,6 +530,38 @@
         "globals",
         "listenv",
         "parallelly"
+      ]
+    },
+    "gamlss": {
+      "Package": "gamlss",
+      "Version": "5.4-22",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "5b74abf34c0be70d30b88dc92491eeee",
+      "Requirements": [
+        "MASS",
+        "gamlss.data",
+        "gamlss.dist",
+        "nlme",
+        "survival"
+      ]
+    },
+    "gamlss.data": {
+      "Package": "gamlss.data",
+      "Version": "6.0-6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "1af1f386f310340e537e67a2af46d085",
+      "Requirements": []
+    },
+    "gamlss.dist": {
+      "Package": "gamlss.dist",
+      "Version": "6.1-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "808dd6784bceed33be0f48d674541e29",
+      "Requirements": [
+        "MASS"
       ]
     },
     "generics": {
@@ -811,6 +877,16 @@
         "numDeriv"
       ]
     },
+    "lmtest": {
+      "Package": "lmtest",
+      "Version": "0.9-40",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c6fafa6cccb1e1dfe7f7d122efd6e6a7",
+      "Requirements": [
+        "zoo"
+      ]
+    },
     "lubridate": {
       "Package": "lubridate",
       "Version": "1.9.3",
@@ -886,6 +962,14 @@
         "Rcpp"
       ]
     },
+    "modeltools": {
+      "Package": "modeltools",
+      "Version": "0.2-23",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f5a957c02222589bdf625a67be68b2a9",
+      "Requirements": []
+    },
     "munsell": {
       "Package": "munsell",
       "Version": "0.5.1",
@@ -912,6 +996,14 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "27550641889a3abf3aec4d91186311ec",
+      "Requirements": []
+    },
+    "nnet": {
+      "Package": "nnet",
+      "Version": "7.3-19",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "2c797b46eea7fb58ede195bc0b1f1138",
       "Requirements": []
     },
     "numDeriv": {
@@ -1216,6 +1308,16 @@
         "wk"
       ]
     },
+    "sandwich": {
+      "Package": "sandwich",
+      "Version": "3.1-0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "1cf6ae532f0179350862fefeb0987c9b",
+      "Requirements": [
+        "zoo"
+      ]
+    },
     "sass": {
       "Package": "sass",
       "Version": "0.4.9",
@@ -1330,6 +1432,16 @@
         "rlang",
         "stringi",
         "vctrs"
+      ]
+    },
+    "survival": {
+      "Package": "survival",
+      "Version": "3.5-7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b8e943d262c3da0b0febd3e04517c197",
+      "Requirements": [
+        "Matrix"
       ]
     },
     "sys": {
@@ -1549,6 +1661,16 @@
       "Repository": "CRAN",
       "Hash": "29240487a071f535f5e5d5a323b7afbd",
       "Requirements": []
+    },
+    "zoo": {
+      "Package": "zoo",
+      "Version": "1.8-12",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "5c715954112b45499fb1dadc6ee6ee3e",
+      "Requirements": [
+        "lattice"
+      ]
     }
   }
 }
