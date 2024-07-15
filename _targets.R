@@ -2,19 +2,17 @@
 library(targets)
 tar_source('R')
 
+
 # Options -----------------------------------------------------------------
 # Targets
 tar_option_set(format = 'qs')
 
-# Stan
-options(mc.cores = 2,
-        scipen = 999,
-        digits = 2)
 
 # Renv --------------------------------------------------------------------
 activate()
 snapshot()
 restore()
+
 
 # Targets -----------------------------------------------------------------
 
@@ -100,7 +98,6 @@ c(
 
 ## TODO 
 # plot model outcomes 
-# add code for figure 1 - map 
 
 # switch to beta regression?
 # model plot data?
