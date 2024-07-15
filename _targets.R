@@ -97,6 +97,11 @@ c(
   ),
   
   tar_target(
+    figure_canopy,
+    make_figure_canopy(can_park, data_park)
+  ),
+  
+  tar_target(
     figure_complexity,
     make_figure_complexity(complexity_park, data_park)
   ),
