@@ -109,6 +109,11 @@ c(
   tar_target(
     figure_invasive,
     make_figure_invasive(inv_stems_park, data_park)
+  ),
+  
+  tar_render(
+    supplementary_info,
+    'figures/supplementary-info.qmd'
   )
   
   
@@ -116,6 +121,5 @@ c(
 
 
 ## TODO 
-# supplementary info
 # model plot data?
 # NOTE: if using plot data - missing some canopy and have 96 plots instead of 92

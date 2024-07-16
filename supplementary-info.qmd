@@ -1,0 +1,251 @@
+---
+title: "Evaluating the Ecological Importance of a Conservation Status on Forest Structure and Composition Across Urban Woodlands"
+format:
+  pdf:
+    fig-width: 12
+    fig-height: 14
+---
+
+Authors: Erica Padvaiskas^1^, Isabella C. Richmond^1^, Carly D. Ziter^1^\*
+
+1 Department of Biology, Concordia University, Montreal Canada, H4B 1R6
+
+\* carly.ziter\@mail.concordia.ca
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| message: false
+#| label: setup
+
+
+source('R/packages.R')
+
+tar_load(trees_raw)
+tar_load(trees_ranges)
+tar_load(sr_park)
+tar_load(shan_park)
+tar_load(can_park)
+tar_load(complexity_park)
+tar_load(inv_sp_park)
+tar_load(inv_stems_park)
+```
+
+------------------------------------------------------------------------
+
+Table S1. Table describing the park type, species, invasive status (according to the Eastern Temperate Forest region), and proportion of stems for each tree species (\> 5.0 cm DBH) found in each park.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s1
+
+# Data Cleaning -----------------------------------------------------------
+  trees_for <- trees_raw[grepl("FOR", trees_raw[["PlotID"]]), ]
+  
+  # fix Excel-formatted dates in DBH columns
+  trees_for$DBH[trees_for$DBH %in% c('03-Jan', '05-Mar')] <- c(2, 4)
+  
+  # create species codes
+  trees_for <- trees_for %>%
+    mutate(SpCode = toupper(paste(str_sub(trees_for$Genus, start = 1, end = 2), str_sub(trees_for$Species, start = 1, end = 2), sep = "")))
+  # create unique code for dead trees as they don't have genus/species names
+  trees_for$SpCode[trees_for$CommonName == "Dead"] <- 'DEAD'
+  # create unique code for unknown species as they don't have genus/species names
+  trees_for$SpCode[trees_for$CommonName == "Unknown"] <- 'UNK'
+  # replace sugar maple code since it is the same as silver maple
+  trees_for$SpCode[trees_for$CommonName == "Sugar Maple"] <- 'ACSC' 
+  
+  
+  ranges <- rename(trees_ranges, SpCode = Species.Code)
+  
+  # filter out trees with DBH < 5 cm
+  trees_adult <- trees_for %>%
+    filter(DBH != "2" & 
+             DBH != "4" &  
+             DBH != "" & 
+             DBH != "1.3" &
+             DBH != "1.5+1.7" & 
+             DBH != "04-Jan" & 
+             DBH != "05-Jan" & 
+             DBH != "06-Jan" &
+             DBH != "07-Jan")
+  
+  
+  
+  # Assign Invasives --------------------------------------------------------
+  
+  # attribute each tree with invasive status based on species code 
+  trees_adult <- left_join(trees_adult, ranges, by = "SpCode")
+  
+  # remove individuals that only have genus assigned for elms, pears, and willows
+  trees_adult <- trees_adult %>%
+    filter(SpCode != "SASP" &
+             SpCode != "PYSP" &
+             SpCode != "ULSP")
+  #remove dead individuals
+  trees_adult <- trees_adult %>%
+    filter(CommonName != "Dead")
+  
+trees_adult %>% 
+  group_by(Park, Scientific.Name) %>% 
+  summarize(Native = first(Native_ETF),
+            Invasive = first(Invasive),
+            n = n()) %>% 
+  mutate(Status = case_when(Native == "Y" ~ 'Native',
+                            Native == "N" & Invasive == "N" ~ 'Non-Native',
+                            Invasive == "Y" ~ 'Invasive')) %>% 
+  ungroup() %>% 
+  group_by(Park) %>% 
+  mutate(nTotal = sum(n), 
+         Percent_Stems = round((n/nTotal)*100, 2),
+         Park_Type = case_when(Park == "Angrignon" ~ "Non-Status",
+                               Park == "Bois-de-Liesse" ~ "Nature",
+                               Park == "Bois-de-Saraguay" ~ "Nature", 
+                               Park == "Boisé-de-Saint-Sulpice" ~ "Non-Status",
+                               Park == "Cap-Saint-Jacques" ~ "Nature", 
+                               Park == "Coulée-Grou" ~ "Non-Status", 
+                               Park == "Île-Bizard" ~ "Nature", 
+                               Park == "Jean-Drapeau" ~ "Non-Status", 
+                               Park == "L'Anse-à-l'Orme" ~ "Nature",
+                               Park == "Pointe-aux-Prairies" ~ "Nature",
+                               Park == "Thomas-Chapais" ~ "Non-Status")) %>% 
+  select(c(Park, Park_Type, Scientific.Name, Status, Percent_Stems)) %>% 
+  arrange(desc(Percent_Stems), .by_group = T) %>% 
+  drop_na() %>% 
+  knitr::kable(col.names = c('Park', 'Park Type', 'Scientific Name', 'Species Status', 'Percent of Stems'))
+  
+
+
+```
+
+Table S2. Model summary table for the general linear model describing the relationship between tree species richness (dependent) and conservation status, park size, and proportion of invasive stems (independents).
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s2
+
+sr_park %>% 
+  broom::tidy() %>% 
+  mutate(term = case_when(term == '(Intercept)' ~ 'Intercept',
+                          term == 'Conservation.areaY' ~ 'Nature Park',
+                          term == 'Park.size_s' ~ 'Park Size',
+                          term == 'PropInv_s' ~ 'Proportion Invasive')) %>%
+  knitr::kable(digits = 2,
+               col.names = c('Term', 'Estimate', 'Standard Error', 't-statistic', 'p-value')) 
+
+
+
+```
+
+Table S3. Model summary table for the general linear model describing the relationship between tree Shannon diversity (dependent) and conservation status, park size, and proportion of invasive stems (independents).
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s3
+
+shan_park %>% 
+  broom::tidy() %>% 
+  mutate(term = case_when(term == '(Intercept)' ~ 'Intercept',
+                          term == 'Conservation.areaY' ~ 'Nature Park',
+                          term == 'Park.size_s' ~ 'Park Size',
+                          term == 'PropInv_s' ~ 'Proportion Invasive')) %>%
+  knitr::kable(digits = 2,
+               col.names = c('Term', 'Estimate', 'Standard Error', 't-statistic', 'p-value')) 
+
+
+
+```
+
+Table S4. Model summary table for the beta regression model describing the relationship between percent canopy cover (dependent) and conservation status, park size, and proportion of invasive stems (independents).
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s4
+
+can_park %>% 
+  broom::tidy() %>%
+  mutate(term = case_when(term == '(Intercept)' ~ 'Intercept',
+                          term == 'Conservation.areaY' ~ 'Nature Park',
+                          term == 'Park.size_s' ~ 'Park Size',
+                          term == 'PropInv_s' ~ 'Proportion Invasive',
+                          term == '(phi)' ~ 'phi')) %>%
+  knitr::kable(digits = 2,
+               col.names = c('Component', 'Term', 'Estimate', 'Standard Error', 't-statistic', 'p-value')) 
+
+
+
+```
+
+Table S5. Model summary table for the general linear model describing the relationship between mean vegetative complexity (dependent) and conservation status, park size, and proportion of invasive stems (independents).
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s5
+
+complexity_park %>% 
+  broom::tidy() %>% 
+  mutate(term = case_when(term == '(Intercept)' ~ 'Intercept',
+                          term == 'Conservation.areaY' ~ 'Nature Park',
+                          term == 'Park.size_s' ~ 'Park Size',
+                          term == 'PropInv_s' ~ 'Proportion Invasive')) %>%
+  knitr::kable(digits = 2,
+               col.names = c('Term', 'Estimate', 'Standard Error', 't-statistic', 'p-value')) 
+
+
+
+```
+
+
+Table S6. Model summary table for the beta regression model describing the relationship between the percent invasive species (dependent) and conservation status and park size (independents)
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s6
+
+inv_sp_park %>% 
+  broom::tidy() %>%
+  mutate(term = case_when(term == '(Intercept)' ~ 'Intercept',
+                          term == 'Conservation.areaY' ~ 'Nature Park',
+                          term == 'Park.size' ~ 'Park Size',
+                          term == '(phi)' ~ 'phi')) %>%
+  knitr::kable(digits = 2,
+               col.names = c('Component', 'Term', 'Estimate', 'Standard Error', 't-statistic', 'p-value')) 
+
+
+
+```
+
+Table S7. Model summary table for the beta regression model describing the relationship between the percent invasive stems (dependent) and conservation status and park size (independents)
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: table-s7
+
+inv_stems_park %>% 
+  broom::tidy() %>%
+  mutate(term = case_when(term == '(Intercept)' ~ 'Intercept',
+                          term == 'Conservation.areaY' ~ 'Nature Park',
+                          term == 'Park.size' ~ 'Park Size',
+                          term == '(phi)' ~ 'phi')) %>%
+  knitr::kable(digits = 2,
+               col.names = c('Component', 'Term', 'Estimate', 'Standard Error', 't-statistic', 'p-value')) 
+
+
+
+```
