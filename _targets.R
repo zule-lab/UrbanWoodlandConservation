@@ -113,7 +113,7 @@ c(
   
   tar_render(
     supplementary_info,
-    'figures/supplementary-info.qmd'
+    'supplementary-info.qmd'
   )
   
   

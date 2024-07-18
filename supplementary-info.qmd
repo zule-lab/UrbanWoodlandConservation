@@ -1,16 +1,16 @@
 ---
-title: "Evaluating the Ecological Importance of a Conservation Status on Forest Structure and Composition Across Urban Woodlands"
+title: "Forest structure but not tree diversity differ among urban woodlands with differing conservation"
 format:
   pdf:
     fig-width: 12
     fig-height: 14
 ---
 
-Authors: Erica Padvaiskas^1^, Isabella C. Richmond^1^, Carly D. Ziter^1^\*
+Authors: Erica Padvaiskas^1^, Isabella C. Richmond^1^\*, Carly D. Ziter^1^
 
 1 Department of Biology, Concordia University, Montreal Canada, H4B 1R6
 
-\* carly.ziter\@mail.concordia.ca
+\* isabella.richmond@mail.concordia.ca
 
 ```{r}
 #| echo: false
