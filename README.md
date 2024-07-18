@@ -2,7 +2,7 @@
 
 Erica Padvaiskas, Isabella C Richmond*, Carly D Ziter
 
-* Corresponding author: isabella.richmond@mail.concordia.ca
+\* Corresponding author: isabella.richmond@mail.concordia.ca
 
 [![DOI](https://zenodo.org/badge/739470234.svg)](https://zenodo.org/doi/10.5281/zenodo.10553229)
 
