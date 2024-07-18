@@ -11,6 +11,7 @@ library(tibble)
 library(ggplot2)
 library(ggspatial)
 library(ggrepel)
+library(patchwork)
 
 library(iNEXT)
 library(vegan)

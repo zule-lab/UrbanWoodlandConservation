@@ -108,7 +108,7 @@ c(
   
   tar_target(
     figure_invasive,
-    make_figure_invasive(inv_stems_park, data_park)
+    make_figure_invasive(inv_stems_park, data_park, trees_raw, trees_ranges)
   ),
   
   tar_render(
