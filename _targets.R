@@ -118,8 +118,3 @@ c(
   
   
 )
-
-
-## TODO 
-# model plot data?
-# NOTE: if using plot data - missing some canopy and have 96 plots instead of 92
