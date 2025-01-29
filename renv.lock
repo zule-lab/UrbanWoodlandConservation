@@ -178,6 +178,44 @@
         "sandwich"
       ]
     },
+    "broom": {
+      "Package": "broom",
+      "Version": "1.0.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "8fcc818f3b9887aebaf206f141437cc9",
+      "Requirements": [
+        "backports",
+        "dplyr",
+        "generics",
+        "glue",
+        "lifecycle",
+        "purrr",
+        "rlang",
+        "stringr",
+        "tibble",
+        "tidyr"
+      ]
+    },
+    "broom.mixed": {
+      "Package": "broom.mixed",
+      "Version": "0.2.9.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e27ed8cc90f6cbb7d9d42bcedf2781ff",
+      "Requirements": [
+        "broom",
+        "coda",
+        "dplyr",
+        "forcats",
+        "furrr",
+        "nlme",
+        "purrr",
+        "stringr",
+        "tibble",
+        "tidyr"
+      ]
+    },
     "bslib": {
       "Package": "bslib",
       "Version": "0.8.0",
@@ -267,6 +305,16 @@
       "Repository": "CRAN",
       "Hash": "0aaa05204035dc43ea0004b9c76611dd",
       "Requirements": []
+    },
+    "coda": {
+      "Package": "coda",
+      "Version": "0.19-4.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "af436915c590afc6fffc3ce3a5be1569",
+      "Requirements": [
+        "lattice"
+      ]
     },
     "codetools": {
       "Package": "codetools",
@@ -418,6 +466,21 @@
         "rlang"
       ]
     },
+    "forcats": {
+      "Package": "forcats",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "1a0a9a3d5083d0d573c4214576f1e690",
+      "Requirements": [
+        "cli",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "rlang",
+        "tibble"
+      ]
+    },
     "fs": {
       "Package": "fs",
       "Version": "1.6.5",
@@ -425,6 +488,34 @@
       "Repository": "CRAN",
       "Hash": "7f48af39fa27711ea5fbd183b399920d",
       "Requirements": []
+    },
+    "furrr": {
+      "Package": "furrr",
+      "Version": "0.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "da7a4c32196cb2262a41dd5a25d486ff",
+      "Requirements": [
+        "future",
+        "globals",
+        "lifecycle",
+        "purrr",
+        "rlang",
+        "vctrs"
+      ]
+    },
+    "future": {
+      "Package": "future",
+      "Version": "1.34.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "475771e3edb711591476be387c9a8c2e",
+      "Requirements": [
+        "digest",
+        "globals",
+        "listenv",
+        "parallelly"
+      ]
     },
     "generics": {
       "Package": "generics",
@@ -485,6 +576,16 @@
         "sf",
         "tibble",
         "tidyr"
+      ]
+    },
+    "globals": {
+      "Package": "globals",
+      "Version": "0.16.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "2580567908cafd4f187c1e5a91e98b7f",
+      "Requirements": [
+        "codetools"
       ]
     },
     "glue": {
@@ -690,6 +791,14 @@
         "rlang"
       ]
     },
+    "listenv": {
+      "Package": "listenv",
+      "Version": "0.9.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e2fca3e12e4db979dccc6e519b10a7ee",
+      "Requirements": []
+    },
     "lmtest": {
       "Package": "lmtest",
       "Version": "0.9-40",
@@ -828,6 +937,14 @@
         "tibble",
         "xml2"
       ]
+    },
+    "parallelly": {
+      "Package": "parallelly",
+      "Version": "1.41.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f5ae11e8e15ee84950752e7b01c55295",
+      "Requirements": []
     },
     "patchwork": {
       "Package": "patchwork",
