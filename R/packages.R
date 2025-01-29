@@ -25,3 +25,4 @@ library(osmdata)
 library(betareg)
 
 library(marginaleffects)
+library(broom.mixed)
