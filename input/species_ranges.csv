@@ -1,65 +1,65 @@
-Species Code,Scientific Name ,Common Name ,Native_ETF,Invasive ,Origin source ,Ivasive Source ,Comments
-ACFR,Acer freemanii,Freeman Maple ,Y,N,Mortens/LM,WI,Hybrid of silver &red
-ACNE,Acer negundo ,Manitoba Maple,Y,N,Mortens,WI,
-ACNI,Acer nigrum ,Black Maple ,Y,N,Mortens ,,
-ACPL,Acer plantanoides,Norway Maple,N,Y,USDA/TC,WI/Mortens,
-ACRU,Acer rubrum ,Red Maple ,Y,N,USDA/LM/TC,WI,
-ACSA,Acer saccharinum ,Silver Maple,Y,N,USDA/LM,WI,
-ACSC,Acer saccharum ,Sugar Maple ,Y,N,USDA/TC/LM/Mortens,WI,
-ACTA,Acer tataricum ,Tatarian Maple,N,N,USDA,WI,
-AEGL,Aesculus glabra,Ohio Buckeye,Y,N,USDA/TC/LM,WI,
-AMAR,Amelanchier arborea,Downy Serviceberry ,Y,N,USDA/TC/LM,WI,
-AMLA,Amelanchier laevis ,Serviceberry ,Y,N,USDA/TC/Morton/APF(202),WI,
-AMSP,Amelanchier sp. ,Serviceberry ,Y,N,USDA/TC/Morton/APF(202),WI,
-BEAL,Betula alleghaniensis,Yellow Birch ,Y,N,USDA/Mortens/LM,WI,
-BEPA,Betula papyrifera,Paper Birch ,Y,N,USDA/TC/LM,WI,
-BEPO,Betula populifolia,Gray Birch ,Y,N,USDA/TC/Mortens,WI,
-CACO,Carya cordiformis,Bitternut Hickory ,Y,N,USDA/TC/LM,WI,
-CAOV,Carya ovata ,Shagbark Hickory ,Y,N,Mortens ,,
-CEOC,Celtis occidentalis,Common Hackberry ,Y,N,USDA/LM/NRC,WI,
-COAL,Cornus alternifolia,Alternate Dogwood ,Y,N,USDA/TC/LM,WI,
-CRMO,Crataegus monogyna ,Common Hawthorn,N,N,USDA/TC/Mortons,WI,
-CRPR,Crataegus pruinosa,Frosted Hawthorn ,N,N,Mortens ,,
-CRSP,Crataegus sp. ,Hawthorn sp. ,N,N,,,
-CRSU,Crataegus succlenta ,Hillside Hawthorn ,Y,N,,,
-FAGR,Fagus grandifolia,American Beech ,Y,N,USDA/TC/LM,WI,
-FRAM,Fraxinus americana ,White Ash ,Y,N,USDA/TC/LM,WI,
-FRPE,Fraxinus pennsylvanica ,Green Ash ,Y,N,,,
-GLTR,Gleditsia triacanthos,Honey Locust ,Y,N,USDA/TC/LM,WI,
-JUCI,Juglans cinerea,White Walnut ,Y,N,USDA/TC/LM,WI,
-JUNI,Juglans nigra ,Black Walnut ,Y,N,,,
-LOPE,Lonicera periclymenum ,Common Honeysuckle ,N,Y,,,
-MADO,Malus domestica,Apple ,Y,N,,,
-MOAL,Morus alba,White Mulberry ,N,Y,,,
-OSVI,Ostrya virginiana,American Hophornbeam,Y,N,USDA/TC/LM,,
-PIAB,Picea aibes,Norway Spruce,N,N,USDA/TC/Mortens,,
-PIGL,Picea glauca,White Spruce,Y,N,USDA/TC/LM,,
-PIPU,Picea pungens,Bue spruce ,Y,N,,,
-PIRE,Pinus resinosa ,Red Pine ,Y,N,USDA/TC/LM,,
-PIST,Pinus strobus,White Pine ,Y,N,USDA/TC/LM,,
-PODE,Populus deltoides ,Eastern Cottonwood ,Y,N,USDA/TC/LM,,
-POTR,Populus tremuloides ,Trembling aspen ,Y,N,,,
-PRSE,Prunus serotina,Black Cherry,Y,N,USDA/TC/LM,,
-PRSP,Prunus sp. ,Cherry sp.,Y,N,,,
-PRVI,Prunus virginiana ,Chockecherry ,Y,N,USDA/TC/LM,,
-PYSP,Pryus sp.,Pear sp. ,,,,,
-QUAL,Quercus alba,White Oak ,Y,N,USDA/TC/LM/NRC,,
-QUBI,Quercus bicolor,Swamp White Oak,Y,N,USDA/TC/LM/NRC,,
-QUMA,Quercus macrocarpa,Bur Oak ,Y,N,USDA/TC/LM/NRC,,
-QURU,Quercus rubra ,Red Oak ,Y,N,TC/LM,,
-RHCA,Rhamnus cathartica ,Common Buckthorn ,N,Y,USDA/TC/Mortens,,
-RHFR,Rhamnus frangula,Glossy Buckthorn ,N,Y,,,
-RUTY,Rhus typhina ,Staghorn Sumac ,Y,N,USDA/TC/LM,WI,
-ROPS,Robinia pseudoacacia,Black Locust ,N,Y,,,
-SASP,Salix sp.,Willow sp. ,,,,,
-SOAU,Sorbus aucuparia,American Mountan Ash ,Y,N,,,
-THOC,Thuja occidentalis ,Eastern White Cedar ,Y,N,,,
-TIAM,Tilia americana ,American Basswood ,Y,N,Mortens/LM,WI,
-TICO,Tilia cordata ,Littleleaf Liden ,N,N,USDA,WI,
-ULAM,Ulmus americana ,White Elm ,Y,N,USDA/TC/LM,WI,
-ULHO,Ulmus hollandica ,Dutch Elm ,N,N,,,
-ULPU,Ulmus pumila,Siberian Elm ,N,Y,USDA/TC/LM,WI/Mortens,
-ULSP,Ulmus sp. ,Elm sp. ,,,,,
-ULTH,Ulmus thomasii,Rock Elm ,Y,N,,,
-VISP,Viburnum species ,Viburnum sp. ,Y,N,,,
-ZAAM,Zanthoxylum americanum ,Common Pricklyash,Y,N,,,
+Species Code,Scientific Name ,Common Name ,Native_ETF,Invasive ,Origin source ,Ivasive Source ,Native_QC,Invasive_QC
+ACFR,Acer freemanii,Freeman Maple ,Y,N,Mortens/LM,WI,Y,N
+ACNE,Acer negundo ,Manitoba Maple,Y,N,Mortens,WI,N,Y
+ACNI,Acer nigrum ,Black Maple ,Y,N,Mortens ,,Y,N
+ACPL,Acer plantanoides,Norway Maple,N,Y,USDA/TC,WI/Mortens,N,Y
+ACRU,Acer rubrum ,Red Maple ,Y,N,USDA/LM/TC,WI,Y,N
+ACSA,Acer saccharinum ,Silver Maple,Y,N,USDA/LM,WI,Y,N
+ACSC,Acer saccharum ,Sugar Maple ,Y,N,USDA/TC/LM/Mortens,WI,Y,N
+ACTA,Acer tataricum ,Tatarian Maple,N,N,USDA,WI,N,Y
+AEGL,Aesculus glabra,Ohio Buckeye,Y,N,USDA/TC/LM,WI,N,N
+AMAR,Amelanchier arborea,Downy Serviceberry ,Y,N,USDA/TC/LM,WI,Y,N
+AMLA,Amelanchier laevis ,Serviceberry ,Y,N,USDA/TC/Morton/APF(202),WI,Y,N
+AMSP,Amelanchier sp. ,Serviceberry ,Y,N,USDA/TC/Morton/APF(202),WI,Y,N
+BEAL,Betula alleghaniensis,Yellow Birch ,Y,N,USDA/Mortens/LM,WI,Y,N
+BEPA,Betula papyrifera,Paper Birch ,Y,N,USDA/TC/LM,WI,Y,N
+BEPO,Betula populifolia,Gray Birch ,Y,N,USDA/TC/Mortens,WI,Y,N
+CACO,Carya cordiformis,Bitternut Hickory ,Y,N,USDA/TC/LM,WI,Y,N
+CAOV,Carya ovata ,Shagbark Hickory ,Y,N,Mortens ,,Y,N
+CEOC,Celtis occidentalis,Common Hackberry ,Y,N,USDA/LM/NRC,WI,Y,N
+COAL,Cornus alternifolia,Alternate Dogwood ,Y,N,USDA/TC/LM,WI,Y,N
+CRMO,Crataegus monogyna ,Common Hawthorn,N,N,USDA/TC/Mortons,WI,N,N
+CRPR,Crataegus pruinosa,Frosted Hawthorn ,N,N,Mortens ,,Y,N
+CRSP,Crataegus sp. ,Hawthorn sp. ,N,N,,,,N
+CRSU,Crataegus succlenta ,Hillside Hawthorn ,Y,N,,,Y,N
+FAGR,Fagus grandifolia,American Beech ,Y,N,USDA/TC/LM,WI,Y,N
+FRAM,Fraxinus americana ,White Ash ,Y,N,USDA/TC/LM,WI,Y,N
+FRPE,Fraxinus pennsylvanica ,Green Ash ,Y,N,,,Y,N
+GLTR,Gleditsia triacanthos,Honey Locust ,Y,N,USDA/TC/LM,WI,N,N
+JUCI,Juglans cinerea,White Walnut ,Y,N,USDA/TC/LM,WI,Y,N
+JUNI,Juglans nigra ,Black Walnut ,Y,N,,,N,N
+LOPE,Lonicera periclymenum ,Common Honeysuckle ,N,Y,,,N,N
+MADO,Malus domestica,Apple ,Y,N,,,N,N
+MOAL,Morus alba,White Mulberry ,N,Y,,,N,N
+OSVI,Ostrya virginiana,American Hophornbeam,Y,N,USDA/TC/LM,,Y,N
+PIAB,Picea abies,Norway Spruce,N,N,USDA/TC/Mortens,,N,N
+PIGL,Picea glauca,White Spruce,Y,N,USDA/TC/LM,,Y,N
+PIPU,Picea pungens,Bue spruce ,Y,N,,,N,N
+PIRE,Pinus resinosa ,Red Pine ,Y,N,USDA/TC/LM,,Y,N
+PIST,Pinus strobus,White Pine ,Y,N,USDA/TC/LM,,Y,N
+PODE,Populus deltoides ,Eastern Cottonwood ,Y,N,USDA/TC/LM,,Y,N
+POTR,Populus tremuloides ,Trembling aspen ,Y,N,,,Y,N
+PRSE,Prunus serotina,Black Cherry,Y,N,USDA/TC/LM,,Y,N
+PRSP,Prunus sp. ,Cherry sp.,Y,N,,,Y,N
+PRVI,Prunus virginiana ,Chockecherry ,Y,N,USDA/TC/LM,,Y,N
+PYSP,Pryus sp.,Pear sp. ,,,,,N,N
+QUAL,Quercus alba,White Oak ,Y,N,USDA/TC/LM/NRC,,Y,N
+QUBI,Quercus bicolor,Swamp White Oak,Y,N,USDA/TC/LM/NRC,,Y,N
+QUMA,Quercus macrocarpa,Bur Oak ,Y,N,USDA/TC/LM/NRC,,Y,N
+QURU,Quercus rubra ,Red Oak ,Y,N,TC/LM,,Y,N
+RHCA,Rhamnus cathartica ,Common Buckthorn ,N,Y,USDA/TC/Mortens,,N,Y
+RHFR,Rhamnus frangula,Glossy Buckthorn ,N,Y,,,N,Y
+RUTY,Rhus typhina ,Staghorn Sumac ,Y,N,USDA/TC/LM,WI,Y,N
+ROPS,Robinia pseudoacacia,Black Locust ,N,Y,,,N,N
+SASP,Salix sp.,Willow sp. ,,,,,Y,N
+SOAU,Sorbus aucuparia,American Mountan Ash ,Y,N,,,N,N
+THOC,Thuja occidentalis ,Eastern White Cedar ,Y,N,,,Y,N
+TIAM,Tilia americana ,American Basswood ,Y,N,Mortens/LM,WI,Y,N
+TICO,Tilia cordata ,Littleleaf Liden ,N,N,USDA,WI,N,N
+ULAM,Ulmus americana ,White Elm ,Y,N,USDA/TC/LM,WI,Y,N
+ULHO,Ulmus hollandica ,Dutch Elm ,N,N,,,N,N
+ULPU,Ulmus pumila,Siberian Elm ,N,Y,USDA/TC/LM,WI/Mortens,N,Y
+ULSP,Ulmus sp. ,Elm sp. ,,,,,,N
+ULTH,Ulmus thomasii,Rock Elm ,Y,N,,,Y,N
+VISP,Viburnum species ,Viburnum sp. ,Y,N,,,,N
+ZAAM,Zanthoxylum americanum ,Common Pricklyash,Y,N,,,Y,N
