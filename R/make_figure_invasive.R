@@ -41,11 +41,12 @@ make_figure_invasive <- function(inv_stems_park, data_park, trees_raw, trees_ran
   # attribute each tree with invasive status based on species code 
   trees_adult <- left_join(trees_adult, ranges, by = "SpCode")
   
-  # remove individuals that only have genus assigned for elms, pears, and willows
+  # remove individuals that only have genus assigned for elms, pears, hawthorn, and viburnum
   trees_adult <- trees_adult %>%
-    filter(SpCode != "SASP" &
+    filter(SpCode != "VISP" &
              SpCode != "PYSP" &
-             SpCode != "ULSP")
+             SpCode != "ULSP" & 
+             SpCode != "CRSP")
   #remove dead individuals
   trees_adult <- trees_adult %>%
     filter(CommonName != "Dead")
@@ -55,9 +56,9 @@ make_figure_invasive <- function(inv_stems_park, data_park, trees_raw, trees_ran
   inv_prop <- trees_adult %>%
     drop_na() %>% 
     group_by(Park) %>%
-    summarize(PropInv = sum(Invasive == "Y", na.rm = T)/n(),
-              PropNat = sum(Native_ETF == "Y", na.rm = T)/n(),
-              PropNonNat = (sum(Native_ETF == "N" & Invasive == "N", na.rm = T)/n())) %>% 
+    summarize(PropInv = sum(Invasive_QC == "Y", na.rm = T)/n(),
+              PropNat = sum(Native_QC == "Y", na.rm = T)/n(),
+              PropNonNat = (sum(Native_QC == "N" & Invasive_QC == "N", na.rm = T)/n())) %>% 
     mutate(Park_Type = case_when(Park == "Angrignon" ~ "Non-Status Woodland",
                                  Park == "Bois-de-Liesse" ~ "Nature Park",
                                  Park == "Bois-de-Saraguay" ~ "Nature Park", 

@@ -81,19 +81,20 @@ Table S1. Table describing the park type, species, invasive status (according to
   # attribute each tree with invasive status based on species code 
   trees_adult <- left_join(trees_adult, ranges, by = "SpCode")
   
-  # remove individuals that only have genus assigned for elms, pears, and willows
+  # remove individuals that only have genus assigned for elms, pears, viburnum, and hawthorn
   trees_adult <- trees_adult %>%
-    filter(SpCode != "SASP" &
+    filter(SpCode != "VISP" &
              SpCode != "PYSP" &
-             SpCode != "ULSP")
+             SpCode != "ULSP" & 
+             SpCode != "CRSP")
   #remove dead individuals
   trees_adult <- trees_adult %>%
     filter(CommonName != "Dead")
   
 trees_adult %>% 
   group_by(Park, Scientific.Name) %>% 
-  summarize(Native = first(Native_ETF),
-            Invasive = first(Invasive),
+  summarize(Native = first(Native_QC),
+            Invasive = first(Invasive_QC),
             n = n()) %>% 
   mutate(Status = case_when(Native == "Y" ~ 'Native',
                             Native == "N" & Invasive == "N" ~ 'Non-Native',

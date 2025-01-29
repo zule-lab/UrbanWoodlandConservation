@@ -81,11 +81,6 @@ park_data <- function(trees_raw, ranges, parks, canopy, parks_spatial){
   # attribute each tree with invasive status based on species code 
   trees_adult <- left_join(trees_adult, ranges, by = "SpCode")
   
-  # remove individuals that only have genus assigned for elms, pears, and willows
-  trees_adult <- trees_adult %>%
-    filter(SpCode != "SASP" &
-             SpCode != "PYSP" &
-             SpCode != "ULSP")
   #remove dead individuals
   trees_adult <- trees_adult %>%
     filter(CommonName != "Dead")
@@ -95,15 +90,15 @@ park_data <- function(trees_raw, ranges, parks, canopy, parks_spatial){
   inv_prop_sp <- trees_adult %>% 
     group_by(Park) %>% 
     distinct(Scientific.Name, .keep_all = T) %>% 
-    select(c(Park, Scientific.Name, Invasive)) %>% 
-    summarize(PropInvSp = sum(Invasive == "Y", na.rm = T)/n())
+    select(c(Park, Scientific.Name, Invasive_QC)) %>% 
+    summarize(PropInvSp = sum(Invasive_QC == "Y", na.rm = T)/n())
   
   
   # Calculate Proportion Invasive Stems -------------------------------------
   
   inv_prop <- trees_adult %>%
     group_by(Park) %>%
-    summarize(PropInv = sum(Invasive == "Y", na.rm = T)/n())
+    summarize(PropInv = sum(Invasive_QC == "Y", na.rm = T)/n())
   
   inv <- inner_join(inv_prop_sp, inv_prop)
   
