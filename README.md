@@ -4,7 +4,10 @@ Erica Padvaiskas, Isabella C Richmond*, Carly D Ziter
 
 \* Corresponding author: isabella.richmond@mail.concordia.ca
 
-[![DOI](https://zenodo.org/badge/739470234.svg)](https://zenodo.org/doi/10.5281/zenodo.10553229)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16911658.svg)](https://doi.org/10.5281/zenodo.16911658)
+
+Paper: https://www.tandfonline.com/doi/full/10.1080/11956860.2025.2495427
+
 
 ## Abstract
 
